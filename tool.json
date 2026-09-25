@@ -1,0 +1,251 @@
+{
+  "tool": {
+    "id": "idade-corrigida-do-prematuro",
+    "title": "Idade corrigida do prematuro",
+    "short": "Idade corrigida e idade pós-menstrual",
+    "spec": [
+      "pediatria",
+      "medicina-de-familia-e-comunidade"
+    ],
+    "desc": "Calcule a idade corrigida do prematuro e a idade pós-menstrual a partir da idade gestacional ao nascer e da data de nascimento, para curvas e marcos do desenvolvimento.",
+    "lead": "Desconta da idade cronológica as semanas que faltaram para as 40 semanas, para avaliar crescimento e desenvolvimento do prematuro pela idade que ele teria se tivesse nascido a termo.",
+    "fields": [
+      [
+        "ig_sem",
+        "Idade gestacional ao nascer: semanas",
+        "num",
+        {
+          "min": 22,
+          "max": 36,
+          "step": 1,
+          "unit": "semanas",
+          "ph": "30"
+        }
+      ],
+      [
+        "ig_dias",
+        "Idade gestacional ao nascer: dias",
+        "num",
+        {
+          "min": 0,
+          "max": 6,
+          "step": 1,
+          "unit": "dias",
+          "ph": "0"
+        }
+      ],
+      [
+        "nasc_d",
+        "Nascimento: dia",
+        "num",
+        {
+          "min": 1,
+          "max": 31,
+          "step": 1,
+          "ph": "1"
+        }
+      ],
+      [
+        "nasc_m",
+        "Nascimento: mês",
+        "num",
+        {
+          "min": 1,
+          "max": 12,
+          "step": 1,
+          "ph": "3"
+        }
+      ],
+      [
+        "nasc_a",
+        "Nascimento: ano",
+        "num",
+        {
+          "min": 2015,
+          "max": 2040,
+          "step": 1,
+          "ph": "2026"
+        }
+      ],
+      [
+        "ref_d",
+        "Data da avaliação: dia <small>(vazio = hoje)</small>",
+        "num",
+        {
+          "min": 1,
+          "max": 31,
+          "step": 1,
+          "ph": "25",
+          "opt": true
+        }
+      ],
+      [
+        "ref_m",
+        "Data da avaliação: mês",
+        "num",
+        {
+          "min": 1,
+          "max": 12,
+          "step": 1,
+          "ph": "9",
+          "opt": true
+        }
+      ],
+      [
+        "ref_a",
+        "Data da avaliação: ano",
+        "num",
+        {
+          "min": 2015,
+          "max": 2040,
+          "step": 1,
+          "ph": "2026",
+          "opt": true
+        }
+      ]
+    ],
+    "formula": "<p><strong>Idade corrigida</strong> = idade cronológica − (40 semanas − idade gestacional ao nascer). Na prática, é o tempo decorrido desde a data em que o bebê completou 40 semanas.</p><p><strong>Idade pós-menstrual</strong> = idade gestacional ao nascer + idade cronológica (em semanas e dias). Antes de 40 semanas de idade pós-menstrual, usa-se ela, e não a idade corrigida.</p>",
+    "table": [
+      [
+        "Situação",
+        "Qual idade usar (AAP 2004)"
+      ],
+      [
+        "Internado, antes do termo",
+        "Idade pós-menstrual (semanas e dias)"
+      ],
+      [
+        "Após o termo, até 3 anos",
+        "Idade corrigida para crescimento e desenvolvimento"
+      ],
+      [
+        "Vacinação",
+        "Idade cronológica"
+      ]
+    ],
+    "tips": [
+      "Vacinas seguem a <strong>idade cronológica</strong>, não a corrigida (exceto situações específicas, como a primeira dose de hepatite B em recém-nascidos com menos de 2 kg, conforme o calendário do PNI).",
+      "Use a idade corrigida nas curvas de crescimento (Intergrowth-21st até 64 semanas pós-menstruais; depois, curvas da OMS) e na avaliação dos marcos do desenvolvimento.",
+      "A AAP recomenda usar a idade corrigida até os 3 anos; muitos serviços corrigem até 2 anos, ou até o prematuro alcançar as curvas (<em>catch-up</em>).",
+      "A introdução alimentar costuma seguir a idade corrigida (em torno de 6 meses corrigidos), avaliando os sinais de prontidão."
+    ],
+    "sources": [
+      [
+        "Engle WA; American Academy of Pediatrics Committee on Fetus and Newborn. Age terminology during the perinatal period. Pediatrics, 2004.",
+        "https://doi.org/10.1542/peds.2004-1915"
+      ]
+    ],
+    "cases": [
+      [
+        "30s 0d, nascido 01/03/2026, avaliação 25/09/2026: 208 dias de vida − 70 = 138 dias = 4 meses e 15 dias",
+        {
+          "ig_sem": 30,
+          "ig_dias": 0,
+          "nasc_d": 1,
+          "nasc_m": 3,
+          "nasc_a": 2026,
+          "ref_d": 25,
+          "ref_m": 9,
+          "ref_a": 2026
+        },
+        {
+          "main": "4 meses e 15 dias",
+          "raw": {
+            "cron": 208,
+            "pma": 418,
+            "corr": 138
+          },
+          "level": "info"
+        }
+      ],
+      [
+        "30s 0d, nascido 01/09/2026, avaliação 25/09/2026: 24 dias de vida, IPM 234 dias = 33s 3d",
+        {
+          "ig_sem": 30,
+          "ig_dias": 0,
+          "nasc_d": 1,
+          "nasc_m": 9,
+          "nasc_a": 2026,
+          "ref_d": 25,
+          "ref_m": 9,
+          "ref_a": 2026
+        },
+        {
+          "main": "33s 3d",
+          "raw": {
+            "cron": 24,
+            "pma": 234
+          }
+        }
+      ],
+      [
+        "28s 3d, nascido 15/01/2025, avaliação 15/01/2026: 365 − 81 = 284 dias = 9 meses e 9 dias",
+        {
+          "ig_sem": 28,
+          "ig_dias": 3,
+          "nasc_d": 15,
+          "nasc_m": 1,
+          "nasc_a": 2025,
+          "ref_d": 15,
+          "ref_m": 1,
+          "ref_a": 2026
+        },
+        {
+          "main": "9 meses e 9 dias",
+          "raw": {
+            "cron": 365,
+            "corr": 284
+          }
+        }
+      ],
+      [
+        "Avaliação antes do nascimento: erro",
+        {
+          "ig_sem": 30,
+          "ig_dias": 0,
+          "nasc_d": 10,
+          "nasc_m": 9,
+          "nasc_a": 2026,
+          "ref_d": 1,
+          "ref_m": 9,
+          "ref_a": 2026
+        },
+        {
+          "error": true
+        }
+      ]
+    ],
+    "batch": "mulher-crianca",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "mulher-crianca",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/mulher-crianca.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 4,
+      "passed": 4,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/mulher-crianca.php",
+    "sha256": "c37d3fefb430d6ec19144161e40e9a08247f3a10406e2873c8d6a4be8649917c",
+    "bytes": 81915
+  },
+  "clinicalValidation": "not-performed"
+}
