@@ -1,9 +1,11 @@
-/* ELUCENIA standalone integration. Source package metadata and rights: README.md. */
+/* tool-idade-corrigida-do-prematuro · Elucenia · https://github.com/Elucenia/tool-idade-corrigida-do-prematuro
+   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+   Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"idade-corrigida-do-prematuro","title":"Idade corrigida do prematuro","fields":[["ig_sem","Idade gestacional ao nascer: semanas","num",{"min":22,"max":36,"step":1,"unit":"semanas","ph":"30"}],["ig_dias","Idade gestacional ao nascer: dias","num",{"min":0,"max":6,"step":1,"unit":"dias","ph":"0"}],["nasc_d","Nascimento: dia","num",{"min":1,"max":31,"step":1,"ph":"1"}],["nasc_m","Nascimento: mês","num",{"min":1,"max":12,"step":1,"ph":"3"}],["nasc_a","Nascimento: ano","num",{"min":2015,"max":2040,"step":1,"ph":"2026"}],["ref_d","Data da avaliação: dia <small>(vazio = hoje)</small>","num",{"min":1,"max":31,"step":1,"ph":"25","opt":true}],["ref_m","Data da avaliação: mês","num",{"min":1,"max":12,"step":1,"ph":"9","opt":true}],["ref_a","Data da avaliação: ano","num",{"min":2015,"max":2040,"step":1,"ph":"2026","opt":true}]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
