@@ -1,7 +1,7 @@
 {
   "name": "@elucenia/tool-idade-corrigida-do-prematuro",
   "version": "0.1.0",
-  "description": "Idade corrigida do prematuro · Elucenia: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
+  "description": "Idade corrigida do prematuro · ELUCENIA: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
   "keywords": [
     "elucenia",
     "medical-calculator",
