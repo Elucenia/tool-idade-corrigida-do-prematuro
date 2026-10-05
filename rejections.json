@@ -1,0 +1,1365 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field ig_sem",
+    "input": {
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "ig_sem"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field ig_sem",
+    "input": {
+      "ig_sem": "",
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "ig_sem"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" ig_sem",
+    "input": {
+      "ig_sem": "NaN",
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ig_sem"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" ig_sem",
+    "input": {
+      "ig_sem": "Infinity",
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ig_sem"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" ig_sem",
+    "input": {
+      "ig_sem": "1e309",
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ig_sem"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" ig_sem",
+    "input": {
+      "ig_sem": "invalid",
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ig_sem"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} ig_sem",
+    "input": {
+      "ig_sem": {},
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ig_sem"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true ig_sem",
+    "input": {
+      "ig_sem": true,
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ig_sem"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum ig_sem",
+    "input": {
+      "ig_sem": 19.8,
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "ig_sem"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum ig_sem",
+    "input": {
+      "ig_sem": 39.6,
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "ig_sem"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field ig_dias",
+    "input": {
+      "ig_sem": 30,
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "ig_dias"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field ig_dias",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": "",
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "ig_dias"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" ig_dias",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": "NaN",
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ig_dias"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" ig_dias",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": "Infinity",
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ig_dias"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" ig_dias",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": "1e309",
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ig_dias"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" ig_dias",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": "invalid",
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ig_dias"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} ig_dias",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": {},
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ig_dias"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true ig_dias",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": true,
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ig_dias"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum ig_dias",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": -1,
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "ig_dias"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum ig_dias",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 7,
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "ig_dias"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field nasc_d",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "nasc_d"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field nasc_d",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": "",
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "nasc_d"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" nasc_d",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": "NaN",
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "nasc_d"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" nasc_d",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": "Infinity",
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "nasc_d"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" nasc_d",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": "1e309",
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "nasc_d"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" nasc_d",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": "invalid",
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "nasc_d"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} nasc_d",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": {},
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "nasc_d"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true nasc_d",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": true,
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "nasc_d"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum nasc_d",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": 0,
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "nasc_d"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum nasc_d",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": 34.1,
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "nasc_d"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field nasc_m",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "nasc_m"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field nasc_m",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": "",
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "nasc_m"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" nasc_m",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": "NaN",
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "nasc_m"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" nasc_m",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": "Infinity",
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "nasc_m"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" nasc_m",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": "1e309",
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "nasc_m"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" nasc_m",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": "invalid",
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "nasc_m"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} nasc_m",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": {},
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "nasc_m"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true nasc_m",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": true,
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "nasc_m"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum nasc_m",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": 0,
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "nasc_m"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum nasc_m",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": 13.2,
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "nasc_m"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field nasc_a",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "nasc_a"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field nasc_a",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": "",
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "nasc_a"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" nasc_a",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": "NaN",
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "nasc_a"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" nasc_a",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": "Infinity",
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "nasc_a"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" nasc_a",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": "1e309",
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "nasc_a"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" nasc_a",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": "invalid",
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "nasc_a"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} nasc_a",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": {},
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "nasc_a"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true nasc_a",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": true,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "nasc_a"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum nasc_a",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": 1813.5,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "nasc_a"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum nasc_a",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": 2244,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "nasc_a"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" ref_d",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": "NaN",
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ref_d"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" ref_d",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": "Infinity",
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ref_d"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" ref_d",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": "1e309",
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ref_d"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" ref_d",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": "invalid",
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ref_d"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} ref_d",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": {},
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ref_d"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true ref_d",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": true,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ref_d"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum ref_d",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": 0,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "ref_d"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum ref_d",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": 34.1,
+      "ref_m": 9,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "ref_d"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" ref_m",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": "NaN",
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ref_m"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" ref_m",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": "Infinity",
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ref_m"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" ref_m",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": "1e309",
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ref_m"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" ref_m",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": "invalid",
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ref_m"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} ref_m",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": {},
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ref_m"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true ref_m",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": true,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ref_m"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum ref_m",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": 0,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "ref_m"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum ref_m",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": 13.2,
+      "ref_a": 2026
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "ref_m"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" ref_a",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ref_a"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" ref_a",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ref_a"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" ref_a",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ref_a"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" ref_a",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ref_a"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} ref_a",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ref_a"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true ref_a",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ref_a"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum ref_a",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 1813.5
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "ref_a"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum ref_a",
+    "input": {
+      "ig_sem": 30,
+      "ig_dias": 0,
+      "nasc_d": 1,
+      "nasc_m": 3,
+      "nasc_a": 2026,
+      "ref_d": 25,
+      "ref_m": 9,
+      "ref_a": 2244
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "ref_a"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]

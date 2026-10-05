@@ -1,0 +1,88 @@
+{
+  "id": "idade-corrigida-do-prematuro",
+  "repository": "Elucenia/tool-idade-corrigida-do-prematuro",
+  "branch": "main",
+  "commit": "f111bf18b5558dc9efeb1432f2cece1231a8408c",
+  "archiveSha256": "f16536dcd92bbad512943a61ed61d2accc0e78ea42b040b349b580d4705ad471",
+  "protectedFiles": [
+    {
+      "path": ".gitattributes",
+      "type": "blob",
+      "mode": "100644",
+      "size": 19,
+      "sha": "6313b56c57848efce05faa7aa7e901ccfc2886ea",
+      "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "type": "blob",
+      "mode": "100644",
+      "size": 279,
+      "sha": "7d3f2f34aa2e948d30695d82d64361467d9e6485",
+      "sha256": "bdbefea1fc6b1d8847725c698f62920917bc8d6504bfe8ed622ed2d5aaf7f160"
+    },
+    {
+      "path": ".gitignore",
+      "type": "blob",
+      "mode": "100644",
+      "size": 42,
+      "sha": "e375bd25cf1a574310ac4c7af0299884556e81e1",
+      "sha256": "763fb702ccbb9bfd8549ca3d0844c731b22aca4e665a2b61d1bb764b64f734d8"
+    },
+    {
+      "path": "AUTHORSHIP.md",
+      "type": "blob",
+      "mode": "100644",
+      "size": 3341,
+      "sha": "e22a7640c703c43b7c4afa3530f6d49e46e91b15",
+      "sha256": "90ab3ff0ec03acbbf572914e1aa35fb1c75c3d61b733551339db01f0aa77f46c"
+    },
+    {
+      "path": "CITATION.cff",
+      "type": "blob",
+      "mode": "100644",
+      "size": 945,
+      "sha": "36f948c6aa94f5713cf9ffdf2f2ad9ee8ce522c6",
+      "sha256": "803a5ec86e6ae1b618bc7ba0672956394c875fe16956f8c8ce7f6fb1754874e6"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "type": "blob",
+      "mode": "100644",
+      "size": 1479,
+      "sha": "3bf58fe29bcd417c77d82db78d89dccf8e78cb6a",
+      "sha256": "8901d5e2b62db5b6954473601ca7b5c88b3f99eebaad6bd253d38ce4acdeab15"
+    },
+    {
+      "path": "LICENSE",
+      "type": "blob",
+      "mode": "100644",
+      "size": 11358,
+      "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "NOTICE",
+      "type": "blob",
+      "mode": "100644",
+      "size": 1665,
+      "sha": "ef2aeca96cac6b780bbf723dc9674f7c48f55f30",
+      "sha256": "efa5aff40e3803e0529925ba5ab5f1a27076b46ae0f3972c80961f58f5dadf2d"
+    },
+    {
+      "path": "SECURITY.md",
+      "type": "blob",
+      "mode": "100644",
+      "size": 894,
+      "sha": "44eafb996937916cbe53e24fa9c5208fe03d5767",
+      "sha256": "3c20d46e436116be0c673f0260b24bbc2193fafbd15fb4659bf0e545b452487e"
+    }
+  ],
+  "receipt": {
+    "file": "reports/review-20261005-completion/native190-protected-remote-baseline-r1.json",
+    "bytes": 6066154,
+    "sha256": "ec8bac70e5a6eed7fb742c319c4e68344eea5713350fa16b9d9bf48e014a9a88"
+  },
+  "remoteCodeExecuted": false,
+  "freshBranchReadRequiredBeforePublication": true
+}

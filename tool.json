@@ -3,12 +3,13 @@
     "id": "idade-corrigida-do-prematuro",
     "title": "Idade corrigida do prematuro",
     "short": "Idade corrigida e idade pós-menstrual",
+    "desc": "Calcule a idade corrigida do prematuro e a idade pós-menstrual a partir da idade gestacional ao nascer e da data de nascimento, para curvas e marcos do desenvolvimento.",
+    "lead": "Desconta da idade cronológica as semanas que faltaram para as 40 semanas, para avaliar crescimento e desenvolvimento do prematuro pela idade que ele teria se tivesse nascido a termo.",
+    "kind": "Calculadora",
     "spec": [
       "pediatria",
       "medicina-de-familia-e-comunidade"
     ],
-    "desc": "Calcule a idade corrigida do prematuro e a idade pós-menstrual a partir da idade gestacional ao nascer e da data de nascimento, para curvas e marcos do desenvolvimento.",
-    "lead": "Desconta da idade cronológica as semanas que faltaram para as 40 semanas, para avaliar crescimento e desenvolvimento do prematuro pela idade que ele teria se tivesse nascido a termo.",
     "fields": [
       [
         "ig_sem",
@@ -105,34 +106,18 @@
       ]
     ],
     "formula": "<p><strong>Idade corrigida</strong> = idade cronológica − (40 semanas − idade gestacional ao nascer). Na prática, é o tempo decorrido desde a data em que o bebê completou 40 semanas.</p><p><strong>Idade pós-menstrual</strong> = idade gestacional ao nascer + idade cronológica (em semanas e dias). Antes de 40 semanas de idade pós-menstrual, usa-se ela, e não a idade corrigida.</p>",
-    "table": [
-      [
-        "Situação",
-        "Qual idade usar (AAP 2004)"
-      ],
-      [
-        "Internado, antes do termo",
-        "Idade pós-menstrual (semanas e dias)"
-      ],
-      [
-        "Após o termo, até 3 anos",
-        "Idade corrigida para crescimento e desenvolvimento"
-      ],
-      [
-        "Vacinação",
-        "Idade cronológica"
-      ]
-    ],
-    "tips": [
-      "Vacinas seguem a <strong>idade cronológica</strong>, não a corrigida (exceto situações específicas, como a primeira dose de hepatite B em recém-nascidos com menos de 2 kg, conforme o calendário do PNI).",
-      "Use a idade corrigida nas curvas de crescimento (Intergrowth-21st até 64 semanas pós-menstruais; depois, curvas da OMS) e na avaliação dos marcos do desenvolvimento.",
-      "A AAP recomenda usar a idade corrigida até os 3 anos; muitos serviços corrigem até 2 anos, ou até o prematuro alcançar as curvas (<em>catch-up</em>).",
-      "A introdução alimentar costuma seguir a idade corrigida (em torno de 6 meses corrigidos), avaliando os sinais de prontidão."
-    ],
     "sources": [
       [
         "Engle WA; American Academy of Pediatrics Committee on Fetus and Newborn. Age terminology during the perinatal period. Pediatrics, 2004.",
         "https://doi.org/10.1542/peds.2004-1915"
+      ],
+      [
+        "Ministério da Saúde,puericultura,current retrieval2026-10-04",
+        "https://linhasdecuidado.saude.gov.br/portal/puericultura/unidade-de-atencao-primaria/crianca/"
+      ],
+      [
+        "American Academy of Pediatrics. Corrected Age For Preemies. HealthyChildren; updated2018-12-10, adapted2017.",
+        "https://www.healthychildren.org/English/ages-stages/baby/preemie/Pages/Corrected-Age-For-Preemies.aspx"
       ]
     ],
     "cases": [
@@ -215,9 +200,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -226,17 +208,403 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T16:03:00.229Z",
+      "total": 360,
+      "passed": 360,
+      "sourceRowCount": 360,
+      "uniqueApiInputCount": 360,
+      "sourceContextCount": 360,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "a0f5343296f33042a2d5c6ce0a8fafccfd006f2641dc5ec6e2e5c6b43e865fe2",
+        "total": 360,
+        "bankRowCount": 360,
+        "uniqueApiInputCount": 360,
+        "sourceContextCount": 360,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/three-age-postmenstrual-arithmetic-expected-final25.json",
+            "sha256": "fd1cd77bcba2074e0d3d14d3ff50f7e227a578296736e5e2f9f2f7e216ff37ed"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/three-method-source-composition-independent-review-final25-v6.json",
+          "sha256": "d3c817a6da4bc80d587564c35c414450ffa965e3270e013015abfbb6aa6be4e5"
+        },
+        "packagingRequirement": "Copy this complete hashed bank into the fresh25 package. Previous24 packages and historical report ZIPs remain frozen and do not contain this evidence."
+      },
+      "inputIdentity": {
+        "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+        "audit": {
+          "file": "reports/review-20261003/three-prospective-source-input-identity-audit-final25-r2.json",
+          "sha256": "8a92ba3da5694cba856099c1165be0a25fba8eebcca9094ad5edd602ee398570"
+        },
+        "sourceRows": 360,
+        "uniqueApiInputs": 360,
+        "duplicateRows": 0
+      },
+      "scope": "Synthetic fixed Gregorian dates: integer chronological days, gestational+chronological postmenstrual days and corrected-day subtraction from40weeks, with null corrected age before term. Separate AAP2004 terminology/AAP2018 developmental-purpose/MS follow-up horizons retained in source context. No approval of one universal cessation age, dynamic today default, developmental diagnosis or complete perinatal policy.",
+      "sources": [
+        {
+          "url": "https://www.healthychildren.org/English/ages-stages/baby/preemie/Pages/Corrected-Age-For-Preemies.aspx",
+          "edition": "AAP HealthyChildren, adapted2017; page updated2018-12-10",
+          "locator": "Calculating corrected age: subtract chronological weeks by40 minus gestational weeks",
+          "access": "Original AAP public patient-education page directly read2026-10-04.",
+          "scope": "Chronological-day calendar differences and40-week corrected-day subtraction only; no milestone diagnosis, growth/vaccine rule, corrected months UI, 3-year note, postmenstrual interpretation or individualized clinical approval."
+        }
+      ],
+      "evidencePath": "reports/review-20261003/three-method-source-composition-independent-review-final25-v6.json",
+      "evidenceSha256": "d3c817a6da4bc80d587564c35c414450ffa965e3270e013015abfbb6aa6be4e5",
+      "peerEvidencePath": "reports/review-20261003/three-method-source-composition-independent-review-final25-v6.json",
+      "peerEvidenceSha256": "d3c817a6da4bc80d587564c35c414450ffa965e3270e013015abfbb6aa6be4e5",
+      "actualAdapterExecutions": 1080,
+      "implementations": [
+        {
+          "id": "idade-corrigida-do-prematuro",
+          "app": "website",
+          "file": "apps/website/private/tool-code/idade-corrigida-do-prematuro/calculator.js",
+          "candidatePath": "reports/review-20261003/three-method-source-composition-stage-final25-v6/apps/website/private/tool-code/idade-corrigida-do-prematuro/calculator.js",
+          "sha256": "03846ab1e0ab39a6979285421c3963f369559e5ef9fe3bbd0f2a81bac4eb22e2"
+        },
+        {
+          "id": "idade-corrigida-do-prematuro",
+          "app": "dashboard",
+          "file": "apps/dashboard/private/tool-code/idade-corrigida-do-prematuro/calculator.js",
+          "candidatePath": "reports/review-20261003/three-method-source-composition-stage-final25-v6/apps/dashboard/private/tool-code/idade-corrigida-do-prematuro/calculator.js",
+          "sha256": "03846ab1e0ab39a6979285421c3963f369559e5ef9fe3bbd0f2a81bac4eb22e2"
+        },
+        {
+          "id": "idade-corrigida-do-prematuro",
+          "app": "command-center",
+          "file": "apps/command-center/private/tool-code/idade-corrigida-do-prematuro/calculator.js",
+          "candidatePath": "reports/review-20261003/three-method-source-composition-stage-final25-v6/apps/command-center/private/tool-code/idade-corrigida-do-prematuro/calculator.js",
+          "sha256": "03846ab1e0ab39a6979285421c3963f369559e5ef9fe3bbd0f2a81bac4eb22e2"
+        }
+      ],
+      "qualifications": [
+        "Synthetic fixed Gregorian dates: integer chronological days, gestational+chronological postmenstrual days and corrected-day subtraction from40weeks, with null corrected age before term. Separate AAP2004 terminology/AAP2018 developmental-purpose/MS follow-up horizons retained in source context. No approval of one universal cessation age, dynamic today default, developmental diagnosis or complete perinatal policy.",
+        "All862 original historical source fixtures/expected values/tolerances preserved. Four inline metadata cases are a declared subset of this complete downloadable bank.",
+        "Named arithmetic/source-code scope only; clinical, professional-language, instrument-rights and full-method approvals not performed."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "AAPterminologiaperinatal 2004:idadecorrigida 40 semanas; idadepósmenstrual separada",
+    "implementationVersion": "idade-corrigida-do-prematuro@native-2026-10-03+03846ab1e0ab",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/15520122/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Idade corrigida = idade cronológica − (40 semanas − idade gestacional ao nascer). Na prática, é o tempo decorrido desde a data em que o bebê completou 40 semanas. Idade pós-menstrual = idade gestacional ao nascer + idade cronológica (em semanas e dias). Antes de 40 semanas de idade pós-menstrual, usa-se ela, e não a idade corrigida.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "ig_sem",
+            "label": "Idade gestacional ao nascer: semanas",
+            "type": "num",
+            "min": 22,
+            "max": 36,
+            "unit": "semanas",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "ig_dias",
+            "label": "Idade gestacional ao nascer: dias",
+            "type": "num",
+            "min": 0,
+            "max": 6,
+            "unit": "dias",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "nasc_d",
+            "label": "Nascimento: dia",
+            "type": "num",
+            "min": 1,
+            "max": 31,
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "nasc_m",
+            "label": "Nascimento: mês",
+            "type": "num",
+            "min": 1,
+            "max": 12,
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "nasc_a",
+            "label": "Nascimento: ano",
+            "type": "num",
+            "min": 2015,
+            "max": 2040,
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "ref_d",
+            "label": "Data da avaliação: dia <small>(vazio = hoje)</small>",
+            "type": "num",
+            "min": 1,
+            "max": 31,
+            "optional": true,
+            "options": null
+          },
+          {
+            "key": "ref_m",
+            "label": "Data da avaliação: mês",
+            "type": "num",
+            "min": 1,
+            "max": 12,
+            "optional": true,
+            "options": null
+          },
+          {
+            "key": "ref_a",
+            "label": "Data da avaliação: ano",
+            "type": "num",
+            "min": 2015,
+            "max": 2040,
+            "optional": true,
+            "options": null
+          }
+        ],
+        "hash": "5e9be66f9e1a03c9a49c083efdd167369f4afa05ccadc62a216f301d5c88bd97"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Engle WA; American Academy of Pediatrics Committee on Fetus and Newborn. Age terminology during the perinatal period. Pediatrics, 2004.",
+          "url": "https://doi.org/10.1542/peds.2004-1915",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Age terminology during the perinatal period.",
+            "year": "2004",
+            "firstPublicationDate": "2004-11-01",
+            "doi": "10.1542/peds.2004-1915",
+            "pmid": "15520122",
+            "journal": "Pediatrics",
+            "authors": "Engle WA, American Academy of Pediatrics Committee on Fetus and Newborn."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/15520122/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "f02058e50bd16a1dd5b89271c1e042c58204fe73c0bd627ab04eb71ce87dcc06",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T16:03:00.229Z",
+        "total": 360,
+        "passed": 360,
+        "sourceRowCount": 360,
+        "uniqueApiInputCount": 360,
+        "sourceContextCount": 360,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "a0f5343296f33042a2d5c6ce0a8fafccfd006f2641dc5ec6e2e5c6b43e865fe2",
+          "total": 360,
+          "bankRowCount": 360,
+          "uniqueApiInputCount": 360,
+          "sourceContextCount": 360,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/three-age-postmenstrual-arithmetic-expected-final25.json",
+              "sha256": "fd1cd77bcba2074e0d3d14d3ff50f7e227a578296736e5e2f9f2f7e216ff37ed"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/three-method-source-composition-independent-review-final25-v6.json",
+            "sha256": "d3c817a6da4bc80d587564c35c414450ffa965e3270e013015abfbb6aa6be4e5"
+          },
+          "packagingRequirement": "Copy this complete hashed bank into the fresh25 package. Previous24 packages and historical report ZIPs remain frozen and do not contain this evidence."
+        },
+        "inputIdentity": {
+          "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+          "audit": {
+            "file": "reports/review-20261003/three-prospective-source-input-identity-audit-final25-r2.json",
+            "sha256": "8a92ba3da5694cba856099c1165be0a25fba8eebcca9094ad5edd602ee398570"
+          },
+          "sourceRows": 360,
+          "uniqueApiInputs": 360,
+          "duplicateRows": 0
+        },
+        "scope": "Synthetic fixed Gregorian dates: integer chronological days, gestational+chronological postmenstrual days and corrected-day subtraction from40weeks, with null corrected age before term. Separate AAP2004 terminology/AAP2018 developmental-purpose/MS follow-up horizons retained in source context. No approval of one universal cessation age, dynamic today default, developmental diagnosis or complete perinatal policy.",
+        "sources": [
+          {
+            "url": "https://www.healthychildren.org/English/ages-stages/baby/preemie/Pages/Corrected-Age-For-Preemies.aspx",
+            "edition": "AAP HealthyChildren, adapted2017; page updated2018-12-10",
+            "locator": "Calculating corrected age: subtract chronological weeks by40 minus gestational weeks",
+            "access": "Original AAP public patient-education page directly read2026-10-04.",
+            "scope": "Chronological-day calendar differences and40-week corrected-day subtraction only; no milestone diagnosis, growth/vaccine rule, corrected months UI, 3-year note, postmenstrual interpretation or individualized clinical approval."
+          }
+        ],
+        "evidencePath": "reports/review-20261003/three-method-source-composition-independent-review-final25-v6.json",
+        "evidenceSha256": "d3c817a6da4bc80d587564c35c414450ffa965e3270e013015abfbb6aa6be4e5",
+        "peerEvidencePath": "reports/review-20261003/three-method-source-composition-independent-review-final25-v6.json",
+        "peerEvidenceSha256": "d3c817a6da4bc80d587564c35c414450ffa965e3270e013015abfbb6aa6be4e5",
+        "actualAdapterExecutions": 1080,
+        "implementations": [
+          {
+            "id": "idade-corrigida-do-prematuro",
+            "app": "website",
+            "file": "apps/website/private/tool-code/idade-corrigida-do-prematuro/calculator.js",
+            "candidatePath": "reports/review-20261003/three-method-source-composition-stage-final25-v6/apps/website/private/tool-code/idade-corrigida-do-prematuro/calculator.js",
+            "sha256": "03846ab1e0ab39a6979285421c3963f369559e5ef9fe3bbd0f2a81bac4eb22e2"
+          },
+          {
+            "id": "idade-corrigida-do-prematuro",
+            "app": "dashboard",
+            "file": "apps/dashboard/private/tool-code/idade-corrigida-do-prematuro/calculator.js",
+            "candidatePath": "reports/review-20261003/three-method-source-composition-stage-final25-v6/apps/dashboard/private/tool-code/idade-corrigida-do-prematuro/calculator.js",
+            "sha256": "03846ab1e0ab39a6979285421c3963f369559e5ef9fe3bbd0f2a81bac4eb22e2"
+          },
+          {
+            "id": "idade-corrigida-do-prematuro",
+            "app": "command-center",
+            "file": "apps/command-center/private/tool-code/idade-corrigida-do-prematuro/calculator.js",
+            "candidatePath": "reports/review-20261003/three-method-source-composition-stage-final25-v6/apps/command-center/private/tool-code/idade-corrigida-do-prematuro/calculator.js",
+            "sha256": "03846ab1e0ab39a6979285421c3963f369559e5ef9fe3bbd0f2a81bac4eb22e2"
+          }
+        ],
+        "qualifications": [
+          "Synthetic fixed Gregorian dates: integer chronological days, gestational+chronological postmenstrual days and corrected-day subtraction from40weeks, with null corrected age before term. Separate AAP2004 terminology/AAP2018 developmental-purpose/MS follow-up horizons retained in source context. No approval of one universal cessation age, dynamic today default, developmental diagnosis or complete perinatal policy.",
+          "All862 original historical source fixtures/expected values/tolerances preserved. Four inline metadata cases are a declared subset of this complete downloadable bank.",
+          "Named arithmetic/source-code scope only; clinical, professional-language, instrument-rights and full-method approvals not performed."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "03846ab1e0ab39a6979285421c3963f369559e5ef9fe3bbd0f2a81bac4eb22e2",
+      "sourceNumericsAmendment": {
+        "recordedAt": "2026-10-04T16:03:00.229Z",
+        "sourceComposition": {
+          "file": "reports/review-20261003/three-method-source-composition-candidate-final25-v6.json",
+          "sha256": "4a00118c9edd7ddc0754e0b26f99b277bd440b3de9dfd90aee7fbbce889d0733"
+        },
+        "independentCompositionPeer": {
+          "file": "reports/review-20261003/three-method-source-composition-independent-review-final25-v6.json",
+          "sha256": "d3c817a6da4bc80d587564c35c414450ffa965e3270e013015abfbb6aa6be4e5"
+        },
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/three-age-postmenstrual-arithmetic-expected-final25.json",
+            "sha256": "fd1cd77bcba2074e0d3d14d3ff50f7e227a578296736e5e2f9f2f7e216ff37ed"
+          }
+        ],
+        "inputIdentityAudit": {
+          "file": "reports/review-20261003/three-prospective-source-input-identity-audit-final25-r2.json",
+          "sha256": "8a92ba3da5694cba856099c1165be0a25fba8eebcca9094ad5edd602ee398570"
+        },
+        "beforeHash": "c028f151c5a67fc794f8204b5f2edbf8df7d6a4cfa88adcc216d42d58be94886",
+        "afterHash": "03846ab1e0ab39a6979285421c3963f369559e5ef9fe3bbd0f2a81bac4eb22e2",
+        "scope": "Synthetic fixed Gregorian dates: integer chronological days, gestational+chronological postmenstrual days and corrected-day subtraction from40weeks, with null corrected age before term. Separate AAP2004 terminology/AAP2018 developmental-purpose/MS follow-up horizons retained in source context. No approval of one universal cessation age, dynamic today default, developmental diagnosis or complete perinatal policy.",
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "originalSourceCasesPreserved": true,
+        "originalTolerancesPreserved": true
+      }
+    },
+    "limits": "A idade corrigida é a idade cronológica menos as semanas que faltavam para 40 semanas de gestação; idade pós-menstrual e idade cronológica são conceitos distintos. No acompanhamento de prematuros, o Ministério da Saúde usa idade cronológica para vacinação e idade corrigida para crescimento e desenvolvimento. A página consultada traz horizontes conforme o desfecho: 18 meses para perímetro cefálico, 24 meses para peso e 42 meses para avaliação neurológica; também descreve a regra geral até 2 anos, ou até 3 anos cronológicos quando o nascimento ocorreu antes de 28 semanas. Escolha a idade e o horizonte segundo o acompanhamento, sem interpretar o cálculo como diagnóstico de atraso. A política da AAP de 2004 trata de terminologia e descreve o termo idade corrigida para crianças prematuras até 3 anos. A página HealthyChildren da AAP, atualizada em 2018, descreve seu uso nos primeiros 2 anos para marcos do desenvolvimento. Os documentos têm finalidades distintas; os trechos conferidos não estabelecem uma única data de cessação para todo acompanhamento. Os horizontes do Ministério da Saúde dependem do desfecho, conforme os limites desta ferramenta.",
+    "limitsEvidence": {
+      "status": "direct-primary-institutional-sections-and-terminology-abstract-read",
+      "sources": [
+        {
+          "url": "https://linhasdecuidado.saude.gov.br/portal/puericultura/unidade-de-atencao-primaria/crianca/",
+          "edition": "Ministério da Saúde,puericultura,current retrieval2026-10-04",
+          "readScope": "Direct primary institutional section Rotina das consultas:chronological vaccination,endpoint-specific corrected-age horizons and general2years/<28weeks3years guidance."
+        },
+        {
+          "url": "https://doi.org/10.1542/peds.2004-1915",
+          "edition": "AAP2004",
+          "readScope": "Exact cached original abstract read for terminology only; full original paper not directly accessible."
+        }
+      ],
+      "populationScope": "Children born preterm; follow-up age must match its endpoint.",
+      "remainingChecks": [
+        "Full AAP2004 source not read.",
+        "Endpoint-specific guidance on same institutional page is not a universal cessation date for all assessments."
+      ],
+      "clinicalValidation": "not-performed",
+      "professionalLanguageReview": "not-performed",
+      "rightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "sourceContextAmendments": [
+        {
+          "receipt": "reports/review-20261003/follow-up-source-notes-candidate-final25-v6.json",
+          "AAP2004": {
+            "id": "AAP2004",
+            "url": "https://doi.org/10.1542/peds.2004-1915",
+            "reproduction": "https://www.manuelosses.cl/Guias/COMPENDIO%20%20GUIAS%20NEO%20AAP%202019.pdf",
+            "edition": "2004 policy reproduced in 2019 neonatal compendium",
+            "readScope": "Reproduction pages419–421 (PDF428–430), terminology definitions and recommendations, read. Publisher full text redirected to login. Mirror expired certificate accepted only for public retrieval; not publisher authenticity or rights approval."
+          },
+          "AAP2018": {
+            "id": "AAP2018",
+            "url": "https://www.healthychildren.org/English/ages-stages/baby/preemie/Pages/Corrected-Age-For-Preemies.aspx",
+            "edition": "Updated2018-12-10, adapted from2017 AAP NICU parent book",
+            "readScope": "Direct primary institutional article body, corrected-age example, first2years developmental goals, update/source and individual-care caveat read."
+          },
+          "MScurrent": {
+            "id": "MScurrent",
+            "url": "https://linhasdecuidado.saude.gov.br/portal/puericultura/unidade-de-atencao-primaria/crianca/",
+            "edition": "Current page retrieved2026-10-04",
+            "readScope": "Direct HTTPS Rotina das consultas section read:18/24/42month endpoints,2year general/<28week3year exception and chronological vaccination. Not whole website or all current pediatric guidance."
+          },
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "rightsApproval": "not-performed"
+        }
+      ]
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/idade-corrigida-do-prematuro/calculator.js",
+    "bytes": 7582,
+    "sha256": "03846ab1e0ab39a6979285421c3963f369559e5ef9fe3bbd0f2a81bac4eb22e2"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "300cdc98b4f99feb0a66ebffa3dfa563758a8f16b475409ed9f864addbf96049",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "5c143063b2c632d270a16119bbeef425e92efe0f63e5d47823c6ec3362a3e0cc",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "5c143063b2c632d270a16119bbeef425e92efe0f63e5d47823c6ec3362a3e0cc",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }
