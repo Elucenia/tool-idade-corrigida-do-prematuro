@@ -1,5 +1,5 @@
 {
-  "schema": "elucenia-native190-current-source-candidate-r1",
+  "schema": "elucenia-native-current-package-R6-HTTP-linked-r5",
   "id": "idade-corrigida-do-prematuro",
   "repository": "Elucenia/tool-idade-corrigida-do-prematuro",
   "remoteBase": {
@@ -180,7 +180,24 @@
   "sourceNodeParityPassed": true,
   "browserVmParityPassed": true,
   "actualBrowserDomVerified": false,
-  "currentActualR6HttpEvidence": "pending",
+  "currentActualR6HttpEvidence": {
+    "path": "evidence/served-http-r6.json",
+    "bytes": 29948,
+    "sha256": "603ad5758a3ec0566b3b9755385d2dfd033752ce7e9e23bef2ddea71c5baaf81",
+    "sourceReceipt": {
+      "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+      "bytes": 7105396,
+      "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+    },
+    "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+    "sourceCalculator": {
+      "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/idade-corrigida-do-prematuro/calculator.js",
+      "sha256": "03846ab1e0ab39a6979285421c3963f369559e5ef9fe3bbd0f2a81bac4eb22e2",
+      "bytes": 7582
+    },
+    "cases": 4,
+    "status": "passed"
+  },
   "rights": {
     "ownCodeScope": "Current MIT adapter and original Apache standalone wrapper/support; exact original licences and notices coexist without rewriting",
     "sourceAdapter": {
@@ -302,5 +319,10 @@
   "externalPublicationReady": false,
   "publicationPerformed": false,
   "appWrites": false,
-  "deliveryWrites": false
+  "deliveryWrites": false,
+  "preparedFrom": {
+    "file": "reports/review-20261005-completion/native187-current-candidates-r2.json",
+    "bytes": 2785936,
+    "sha256": "2fe0448a9680b4a50b34235469d7cb36b3e8075ce0559d700f59442007cfb0f9"
+  }
 }
