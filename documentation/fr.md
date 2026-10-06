@@ -105,3 +105,43 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Utiliser l'âge corrigé sur les courbes de croissance et dans l'évaluation du développement
+
+| Détails du résultat | |
+| --- | --- |
+| Âge chronologique | 6 mois et 24 jours (208 jours) |
+| Âge postmenstruel | 59 a 5 j |
+| Prématurité à déduire | 10 a 0 j (70 jours) |
+| Date à laquelle 40 semaines ont été complétées | 10/5/2026 |
+
+
+### 2
+
+N'a pas encore atteint 40 semaines : utiliser l'âge postmenstruel (l'âge corrigé n'existe qu'après le terme)
+
+| Détails du résultat | |
+| --- | --- |
+| Âge chronologique | 24 jours (24 jours) |
+| Âge postmenstruel | 33 a 3 j |
+| Prématurité à déduire | 10 a 0 j (70 jours) |
+| Date à laquelle 40 semaines ont été complétées | 10/11/2026 |
+
+
+### 3
+
+Utiliser l'âge corrigé sur les courbes de croissance et dans l'évaluation du développement
+
+| Détails du résultat | |
+| --- | --- |
+| Âge chronologique | 1 an (365 jours) |
+| Âge postmenstruel | 80 a 4 j |
+| Prématurité à déduire | 11 a 4 j (81 jours) |
+| Date à laquelle 40 semaines ont été complétées | 6/4/2025 |
+

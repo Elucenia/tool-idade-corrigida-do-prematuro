@@ -1,0 +1,290 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "idade-corrigida-do-prematuro",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "d79338061011d6e34d28e2c8cc382ce19ecc9bcf",
+    "oldEngineSha256": "03846ab1e0ab39a6979285421c3963f369559e5ef9fe3bbd0f2a81bac4eb22e2",
+    "currentEngineSha256": "8c3a32bfceff5f9902c7adbfdaf2e9a00ab1733004761704639790f595bea5d2"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "30s 0d, nascido 01/03/2026, avaliação 25/09/2026: 208 dias de vida − 70 = 138 dias = 4 meses e 15 dias",
+      "input": {
+        "ig_sem": 30,
+        "ig_dias": 0,
+        "nasc_d": 1,
+        "nasc_m": 3,
+        "nasc_a": 2026,
+        "ref_d": 25,
+        "ref_m": 9,
+        "ref_a": 2026
+      },
+      "publicOutput": {
+        "id": "idade-corrigida-do-prematuro",
+        "main": [
+          "4 meses e 15 dias",
+          ""
+        ],
+        "label": "Idade corrigida",
+        "raw": {
+          "cron": 208,
+          "pma": 418,
+          "corr": 138,
+          "corr_m": 4,
+          "corr_d": 15
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "main": "4 meses e 15 dias",
+        "raw": {
+          "cron": 208,
+          "pma": 418,
+          "corr": 138
+        },
+        "level": "info"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "4 meses e 15 dias",
+          ""
+        ],
+        "label": "Idade corrigida",
+        "level": "info",
+        "verdict": "Use a idade corrigida nas curvas de crescimento e na avaliação do desenvolvimento",
+        "rows": [
+          [
+            "Idade cronológica",
+            "6 meses e 24 dias (208 dias)"
+          ],
+          [
+            "Idade pós-menstrual",
+            "59s 5d"
+          ],
+          [
+            "Prematuridade a descontar",
+            "10s 0d (70 dias)"
+          ],
+          [
+            "Data em que completou 40 semanas",
+            "10/05/2026"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "cron": 208,
+          "pma": 418,
+          "corr": 138,
+          "corr_m": 4,
+          "corr_d": 15
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "30s 0d, nascido 01/09/2026, avaliação 25/09/2026: 24 dias de vida, IPM 234 dias = 33s 3d",
+      "input": {
+        "ig_sem": 30,
+        "ig_dias": 0,
+        "nasc_d": 1,
+        "nasc_m": 9,
+        "nasc_a": 2026,
+        "ref_d": 25,
+        "ref_m": 9,
+        "ref_a": 2026
+      },
+      "publicOutput": {
+        "id": "idade-corrigida-do-prematuro",
+        "main": [
+          "33s 3d",
+          "de idade pós-menstrual"
+        ],
+        "label": "Idade pós-menstrual",
+        "raw": {
+          "cron": 24,
+          "pma": 234,
+          "corr": null
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "main": "33s 3d",
+        "raw": {
+          "cron": 24,
+          "pma": 234
+        }
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "33s 3d",
+          "de idade pós-menstrual"
+        ],
+        "label": "Idade pós-menstrual",
+        "level": "info",
+        "verdict": "Ainda não completou 40 semanas: use a idade pós-menstrual (a idade corrigida só existe após o termo)",
+        "rows": [
+          [
+            "Idade cronológica",
+            "24 dias (24 dias)"
+          ],
+          [
+            "Idade pós-menstrual",
+            "33s 3d"
+          ],
+          [
+            "Prematuridade a descontar",
+            "10s 0d (70 dias)"
+          ],
+          [
+            "Data em que completou 40 semanas",
+            "10/11/2026"
+          ]
+        ],
+        "raw": {
+          "cron": 24,
+          "pma": 234,
+          "corr": null
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "28s 3d, nascido 15/01/2025, avaliação 15/01/2026: 365 − 81 = 284 dias = 9 meses e 9 dias",
+      "input": {
+        "ig_sem": 28,
+        "ig_dias": 3,
+        "nasc_d": 15,
+        "nasc_m": 1,
+        "nasc_a": 2025,
+        "ref_d": 15,
+        "ref_m": 1,
+        "ref_a": 2026
+      },
+      "publicOutput": {
+        "id": "idade-corrigida-do-prematuro",
+        "main": [
+          "9 meses e 9 dias",
+          ""
+        ],
+        "label": "Idade corrigida",
+        "raw": {
+          "cron": 365,
+          "pma": 564,
+          "corr": 284,
+          "corr_m": 9,
+          "corr_d": 9
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "main": "9 meses e 9 dias",
+        "raw": {
+          "cron": 365,
+          "corr": 284
+        }
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "9 meses e 9 dias",
+          ""
+        ],
+        "label": "Idade corrigida",
+        "level": "info",
+        "verdict": "Use a idade corrigida nas curvas de crescimento e na avaliação do desenvolvimento",
+        "rows": [
+          [
+            "Idade cronológica",
+            "1 ano (365 dias)"
+          ],
+          [
+            "Idade pós-menstrual",
+            "80s 4d"
+          ],
+          [
+            "Prematuridade a descontar",
+            "11s 4d (81 dias)"
+          ],
+          [
+            "Data em que completou 40 semanas",
+            "06/04/2025"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "cron": 365,
+          "pma": 564,
+          "corr": 284,
+          "corr_m": 9,
+          "corr_d": 9
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "Avaliação antes do nascimento: erro",
+      "input": {
+        "ig_sem": 30,
+        "ig_dias": 0,
+        "nasc_d": 10,
+        "nasc_m": 9,
+        "nasc_a": 2026,
+        "ref_d": 1,
+        "ref_m": 9,
+        "ref_a": 2026
+      },
+      "publicOutput": {
+        "error": "A data da avaliação é anterior ao nascimento.",
+        "code": "FORMULA_DOMAIN"
+      },
+      "sourceExpected": {
+        "error": true
+      },
+      "state": "existing-rejection"
+    }
+  ]
+}

@@ -105,3 +105,43 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Use corrected age on growth curves and in developmental assessment
+
+| Result details | |
+| --- | --- |
+| Chronological age | 6 months and 24 days (208 days) |
+| Postmenstrual age | 59y 5d |
+| Prematurity to deduct | 10y 0d (70 days) |
+| Date when 40 weeks were completed | 10/5/2026 |
+
+
+### 2
+
+It has not yet completed 40 weeks: use postmenstrual age (corrected age exists only after term)
+
+| Result details | |
+| --- | --- |
+| Chronological age | 24 days (24 days) |
+| Postmenstrual age | 33y 3d |
+| Prematurity to deduct | 10y 0d (70 days) |
+| Date when 40 weeks were completed | 10/11/2026 |
+
+
+### 3
+
+Use corrected age on growth curves and in developmental assessment
+
+| Result details | |
+| --- | --- |
+| Chronological age | 1 year (365 days) |
+| Postmenstrual age | 80y 4d |
+| Prematurity to deduct | 11y 4d (81 days) |
+| Date when 40 weeks were completed | 6/4/2025 |
+

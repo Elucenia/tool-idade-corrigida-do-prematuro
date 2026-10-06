@@ -105,3 +105,43 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Usare l'età corretta nelle curve di crescita e nella valutazione dello sviluppo
+
+| Dettagli del risultato | |
+| --- | --- |
+| Età cronologica | 6 mesi e 24 giorni (208 giorni) |
+| Età postmestruale | 59a 5g |
+| Prematurità da detrarre | 10a 0g (70 giorni) |
+| Data in cui ha completato 40 settimane | 10/5/2026 |
+
+
+### 2
+
+Non ha ancora completato 40 settimane: usare l'età postmestruale (l'età corretta esiste solo dopo il termine)
+
+| Dettagli del risultato | |
+| --- | --- |
+| Età cronologica | 24 giorni (24 giorni) |
+| Età postmestruale | 33a 3g |
+| Prematurità da detrarre | 10a 0g (70 giorni) |
+| Data in cui ha completato 40 settimane | 10/11/2026 |
+
+
+### 3
+
+Usare l'età corretta nelle curve di crescita e nella valutazione dello sviluppo
+
+| Dettagli del risultato | |
+| --- | --- |
+| Età cronologica | 1 anno (365 giorni) |
+| Età postmestruale | 80a 4g |
+| Prematurità da detrarre | 11a 4g (81 giorni) |
+| Data in cui ha completato 40 settimane | 6/4/2025 |
+

@@ -105,3 +105,43 @@ Resultado de la fórmula o clasificación. La interpretación, la conducta y la 
 Apache-2.0 se aplica únicamente al código de ELUCENIA. Los derechos de los instrumentos, publicaciones, traducciones y datos permanecen en manos de sus respectivos titulares. Conserve LICENSE y NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+La información siguiente conserva las salidas del método para ejemplos sintéticos. No constituye una validación clínica independiente.
+
+### 1
+
+Use la edad corregida en las curvas de crecimiento y en la evaluación del desarrollo
+
+| Detalles del resultado | |
+| --- | --- |
+| Edad cronológica | 6 meses y 24 días (208 días) |
+| Edad posmenstrual | 59a 5d |
+| Prematuridad a descontar | 10a 0d (70 días) |
+| Fecha en que completó 40 semanas | 10/5/2026 |
+
+
+### 2
+
+Aún no completó 40 semanas: use la edad posmenstrual (la edad corregida solo existe después del término)
+
+| Detalles del resultado | |
+| --- | --- |
+| Edad cronológica | 24 días (24 días) |
+| Edad posmenstrual | 33a 3d |
+| Prematuridad a descontar | 10a 0d (70 días) |
+| Fecha en que completó 40 semanas | 10/11/2026 |
+
+
+### 3
+
+Use la edad corregida en las curvas de crecimiento y en la evaluación del desarrollo
+
+| Detalles del resultado | |
+| --- | --- |
+| Edad cronológica | 1 año (365 días) |
+| Edad posmenstrual | 80a 4d |
+| Prematuridad a descontar | 11a 4d (81 días) |
+| Fecha en que completó 40 semanas | 6/4/2025 |
+

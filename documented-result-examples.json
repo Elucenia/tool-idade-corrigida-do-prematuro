@@ -1,0 +1,2472 @@
+{
+  "id": "idade-corrigida-do-prematuro",
+  "implementationVersion": "idade-corrigida-do-prematuro@native-2026-10-05+8c3a32bfceff",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "30s 0d, nascido 01/03/2026, avaliação 25/09/2026: 208 dias de vida − 70 = 138 dias = 4 meses e 15 dias",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Idade cronológica",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "6 meses e 24 dias (208 dias)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Idade pós-menstrual",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "59s 5d",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Prematuridade a descontar",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "10s 0d (70 dias)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Data em que completou 40 semanas",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "10/05/2026",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Use a idade corrigida nas curvas de crescimento e na avaliação do desenvolvimento",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "30s 0d, nascido 01/09/2026, avaliação 25/09/2026: 24 dias de vida, IPM 234 dias = 33s 3d",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Idade cronológica",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "24 dias (24 dias)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Idade pós-menstrual",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "33s 3d",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Prematuridade a descontar",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "10s 0d (70 dias)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Data em que completou 40 semanas",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "10/11/2026",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Ainda não completou 40 semanas: use a idade pós-menstrual (a idade corrigida só existe após o termo)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "28s 3d, nascido 15/01/2025, avaliação 15/01/2026: 365 − 81 = 284 dias = 9 meses e 9 dias",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Idade cronológica",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "1 ano (365 dias)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Idade pós-menstrual",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "80s 4d",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Prematuridade a descontar",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "11s 4d (81 dias)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Data em que completou 40 semanas",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "06/04/2025",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Use a idade corrigida nas curvas de crescimento e na avaliação do desenvolvimento",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "30s 0d, nascido 01/03/2026, avaliação 25/09/2026: 208 dias de vida − 70 = 138 dias = 4 meses e 15 dias",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Chronological age",
+                "locale": "en",
+                "template": "documented-authored-d46d1b5a1839bd0b2854"
+              },
+              "value": {
+                "text": "6 months and 24 days (208 days)",
+                "locale": "en",
+                "template": "documented-authored-234d96facadd4b49add3",
+                "sourceNumbers": [
+                  6,
+                  24,
+                  208
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Postmenstrual age",
+                "locale": "en",
+                "template": "documented-authored-8fe4b8de9b6b0f8c4d37"
+              },
+              "value": {
+                "text": "59y 5d",
+                "locale": "en",
+                "template": "documented-authored-4830d724d70548cc6a25",
+                "sourceNumbers": [
+                  59,
+                  5
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Prematurity to deduct",
+                "locale": "en",
+                "template": "documented-authored-452bb8b1243d7b6e75d3"
+              },
+              "value": {
+                "text": "10y 0d (70 days)",
+                "locale": "en",
+                "template": "documented-authored-4e8a3ec8b2d83bc80565",
+                "sourceNumbers": [
+                  10,
+                  0,
+                  70
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Date when 40 weeks were completed",
+                "locale": "en",
+                "template": "documented-authored-9309eac55e94c36fc590"
+              },
+              "value": {
+                "text": "10/5/2026",
+                "locale": "en",
+                "template": "documented-authored-fbb13695ffd0194e6eb8",
+                "sourceNumbers": [
+                  10,
+                  5,
+                  2026
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Use corrected age on growth curves and in developmental assessment",
+            "locale": "en",
+            "template": "documented-authored-905c309791fac67ef129"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "30s 0d, nascido 01/09/2026, avaliação 25/09/2026: 24 dias de vida, IPM 234 dias = 33s 3d",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Chronological age",
+                "locale": "en",
+                "template": "documented-authored-d46d1b5a1839bd0b2854"
+              },
+              "value": {
+                "text": "24 days (24 days)",
+                "locale": "en",
+                "template": "documented-authored-cc12b4b474aad7e09c51",
+                "sourceNumbers": [
+                  24,
+                  24
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Postmenstrual age",
+                "locale": "en",
+                "template": "documented-authored-8fe4b8de9b6b0f8c4d37"
+              },
+              "value": {
+                "text": "33y 3d",
+                "locale": "en",
+                "template": "documented-authored-4830d724d70548cc6a25",
+                "sourceNumbers": [
+                  33,
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Prematurity to deduct",
+                "locale": "en",
+                "template": "documented-authored-452bb8b1243d7b6e75d3"
+              },
+              "value": {
+                "text": "10y 0d (70 days)",
+                "locale": "en",
+                "template": "documented-authored-4e8a3ec8b2d83bc80565",
+                "sourceNumbers": [
+                  10,
+                  0,
+                  70
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Date when 40 weeks were completed",
+                "locale": "en",
+                "template": "documented-authored-9309eac55e94c36fc590"
+              },
+              "value": {
+                "text": "10/11/2026",
+                "locale": "en",
+                "template": "documented-authored-fbb13695ffd0194e6eb8",
+                "sourceNumbers": [
+                  10,
+                  11,
+                  2026
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "It has not yet completed 40 weeks: use postmenstrual age (corrected age exists only after term)",
+            "locale": "en",
+            "template": "documented-authored-33e313346e1db67acc9a"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "28s 3d, nascido 15/01/2025, avaliação 15/01/2026: 365 − 81 = 284 dias = 9 meses e 9 dias",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Chronological age",
+                "locale": "en",
+                "template": "documented-authored-d46d1b5a1839bd0b2854"
+              },
+              "value": {
+                "text": "1 year (365 days)",
+                "locale": "en",
+                "template": "documented-authored-c7f0c98297be7556bf3a",
+                "sourceNumbers": [
+                  1,
+                  365
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Postmenstrual age",
+                "locale": "en",
+                "template": "documented-authored-8fe4b8de9b6b0f8c4d37"
+              },
+              "value": {
+                "text": "80y 4d",
+                "locale": "en",
+                "template": "documented-authored-4830d724d70548cc6a25",
+                "sourceNumbers": [
+                  80,
+                  4
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Prematurity to deduct",
+                "locale": "en",
+                "template": "documented-authored-452bb8b1243d7b6e75d3"
+              },
+              "value": {
+                "text": "11y 4d (81 days)",
+                "locale": "en",
+                "template": "documented-authored-4e8a3ec8b2d83bc80565",
+                "sourceNumbers": [
+                  11,
+                  4,
+                  81
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Date when 40 weeks were completed",
+                "locale": "en",
+                "template": "documented-authored-9309eac55e94c36fc590"
+              },
+              "value": {
+                "text": "6/4/2025",
+                "locale": "en",
+                "template": "documented-authored-fbb13695ffd0194e6eb8",
+                "sourceNumbers": [
+                  6,
+                  4,
+                  2025
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Use corrected age on growth curves and in developmental assessment",
+            "locale": "en",
+            "template": "documented-authored-905c309791fac67ef129"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "30s 0d, nascido 01/03/2026, avaliação 25/09/2026: 208 dias de vida − 70 = 138 dias = 4 meses e 15 dias",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Edad cronológica",
+                "locale": "es",
+                "template": "documented-authored-d46d1b5a1839bd0b2854"
+              },
+              "value": {
+                "text": "6 meses y 24 días (208 días)",
+                "locale": "es",
+                "template": "documented-authored-234d96facadd4b49add3",
+                "sourceNumbers": [
+                  6,
+                  24,
+                  208
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Edad posmenstrual",
+                "locale": "es",
+                "template": "documented-authored-8fe4b8de9b6b0f8c4d37"
+              },
+              "value": {
+                "text": "59a 5d",
+                "locale": "es",
+                "template": "documented-authored-4830d724d70548cc6a25",
+                "sourceNumbers": [
+                  59,
+                  5
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Prematuridad a descontar",
+                "locale": "es",
+                "template": "documented-authored-452bb8b1243d7b6e75d3"
+              },
+              "value": {
+                "text": "10a 0d (70 días)",
+                "locale": "es",
+                "template": "documented-authored-4e8a3ec8b2d83bc80565",
+                "sourceNumbers": [
+                  10,
+                  0,
+                  70
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Fecha en que completó 40 semanas",
+                "locale": "es",
+                "template": "documented-authored-9309eac55e94c36fc590"
+              },
+              "value": {
+                "text": "10/5/2026",
+                "locale": "es",
+                "template": "documented-authored-fbb13695ffd0194e6eb8",
+                "sourceNumbers": [
+                  10,
+                  5,
+                  2026
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Use la edad corregida en las curvas de crecimiento y en la evaluación del desarrollo",
+            "locale": "es",
+            "template": "documented-authored-905c309791fac67ef129"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "30s 0d, nascido 01/09/2026, avaliação 25/09/2026: 24 dias de vida, IPM 234 dias = 33s 3d",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Edad cronológica",
+                "locale": "es",
+                "template": "documented-authored-d46d1b5a1839bd0b2854"
+              },
+              "value": {
+                "text": "24 días (24 días)",
+                "locale": "es",
+                "template": "documented-authored-cc12b4b474aad7e09c51",
+                "sourceNumbers": [
+                  24,
+                  24
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Edad posmenstrual",
+                "locale": "es",
+                "template": "documented-authored-8fe4b8de9b6b0f8c4d37"
+              },
+              "value": {
+                "text": "33a 3d",
+                "locale": "es",
+                "template": "documented-authored-4830d724d70548cc6a25",
+                "sourceNumbers": [
+                  33,
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Prematuridad a descontar",
+                "locale": "es",
+                "template": "documented-authored-452bb8b1243d7b6e75d3"
+              },
+              "value": {
+                "text": "10a 0d (70 días)",
+                "locale": "es",
+                "template": "documented-authored-4e8a3ec8b2d83bc80565",
+                "sourceNumbers": [
+                  10,
+                  0,
+                  70
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Fecha en que completó 40 semanas",
+                "locale": "es",
+                "template": "documented-authored-9309eac55e94c36fc590"
+              },
+              "value": {
+                "text": "10/11/2026",
+                "locale": "es",
+                "template": "documented-authored-fbb13695ffd0194e6eb8",
+                "sourceNumbers": [
+                  10,
+                  11,
+                  2026
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Aún no completó 40 semanas: use la edad posmenstrual (la edad corregida solo existe después del término)",
+            "locale": "es",
+            "template": "documented-authored-33e313346e1db67acc9a"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "28s 3d, nascido 15/01/2025, avaliação 15/01/2026: 365 − 81 = 284 dias = 9 meses e 9 dias",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Edad cronológica",
+                "locale": "es",
+                "template": "documented-authored-d46d1b5a1839bd0b2854"
+              },
+              "value": {
+                "text": "1 año (365 días)",
+                "locale": "es",
+                "template": "documented-authored-c7f0c98297be7556bf3a",
+                "sourceNumbers": [
+                  1,
+                  365
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Edad posmenstrual",
+                "locale": "es",
+                "template": "documented-authored-8fe4b8de9b6b0f8c4d37"
+              },
+              "value": {
+                "text": "80a 4d",
+                "locale": "es",
+                "template": "documented-authored-4830d724d70548cc6a25",
+                "sourceNumbers": [
+                  80,
+                  4
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Prematuridad a descontar",
+                "locale": "es",
+                "template": "documented-authored-452bb8b1243d7b6e75d3"
+              },
+              "value": {
+                "text": "11a 4d (81 días)",
+                "locale": "es",
+                "template": "documented-authored-4e8a3ec8b2d83bc80565",
+                "sourceNumbers": [
+                  11,
+                  4,
+                  81
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Fecha en que completó 40 semanas",
+                "locale": "es",
+                "template": "documented-authored-9309eac55e94c36fc590"
+              },
+              "value": {
+                "text": "6/4/2025",
+                "locale": "es",
+                "template": "documented-authored-fbb13695ffd0194e6eb8",
+                "sourceNumbers": [
+                  6,
+                  4,
+                  2025
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Use la edad corregida en las curvas de crecimiento y en la evaluación del desarrollo",
+            "locale": "es",
+            "template": "documented-authored-905c309791fac67ef129"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "30s 0d, nascido 01/03/2026, avaliação 25/09/2026: 208 dias de vida − 70 = 138 dias = 4 meses e 15 dias",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Âge chronologique",
+                "locale": "fr",
+                "template": "documented-authored-d46d1b5a1839bd0b2854"
+              },
+              "value": {
+                "text": "6 mois et 24 jours (208 jours)",
+                "locale": "fr",
+                "template": "documented-authored-234d96facadd4b49add3",
+                "sourceNumbers": [
+                  6,
+                  24,
+                  208
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Âge postmenstruel",
+                "locale": "fr",
+                "template": "documented-authored-8fe4b8de9b6b0f8c4d37"
+              },
+              "value": {
+                "text": "59 a 5 j",
+                "locale": "fr",
+                "template": "documented-authored-4830d724d70548cc6a25",
+                "sourceNumbers": [
+                  59,
+                  5
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Prématurité à déduire",
+                "locale": "fr",
+                "template": "documented-authored-452bb8b1243d7b6e75d3"
+              },
+              "value": {
+                "text": "10 a 0 j (70 jours)",
+                "locale": "fr",
+                "template": "documented-authored-4e8a3ec8b2d83bc80565",
+                "sourceNumbers": [
+                  10,
+                  0,
+                  70
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Date à laquelle 40 semaines ont été complétées",
+                "locale": "fr",
+                "template": "documented-authored-9309eac55e94c36fc590"
+              },
+              "value": {
+                "text": "10/5/2026",
+                "locale": "fr",
+                "template": "documented-authored-fbb13695ffd0194e6eb8",
+                "sourceNumbers": [
+                  10,
+                  5,
+                  2026
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Utiliser l'âge corrigé sur les courbes de croissance et dans l'évaluation du développement",
+            "locale": "fr",
+            "template": "documented-authored-905c309791fac67ef129"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "30s 0d, nascido 01/09/2026, avaliação 25/09/2026: 24 dias de vida, IPM 234 dias = 33s 3d",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Âge chronologique",
+                "locale": "fr",
+                "template": "documented-authored-d46d1b5a1839bd0b2854"
+              },
+              "value": {
+                "text": "24 jours (24 jours)",
+                "locale": "fr",
+                "template": "documented-authored-cc12b4b474aad7e09c51",
+                "sourceNumbers": [
+                  24,
+                  24
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Âge postmenstruel",
+                "locale": "fr",
+                "template": "documented-authored-8fe4b8de9b6b0f8c4d37"
+              },
+              "value": {
+                "text": "33 a 3 j",
+                "locale": "fr",
+                "template": "documented-authored-4830d724d70548cc6a25",
+                "sourceNumbers": [
+                  33,
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Prématurité à déduire",
+                "locale": "fr",
+                "template": "documented-authored-452bb8b1243d7b6e75d3"
+              },
+              "value": {
+                "text": "10 a 0 j (70 jours)",
+                "locale": "fr",
+                "template": "documented-authored-4e8a3ec8b2d83bc80565",
+                "sourceNumbers": [
+                  10,
+                  0,
+                  70
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Date à laquelle 40 semaines ont été complétées",
+                "locale": "fr",
+                "template": "documented-authored-9309eac55e94c36fc590"
+              },
+              "value": {
+                "text": "10/11/2026",
+                "locale": "fr",
+                "template": "documented-authored-fbb13695ffd0194e6eb8",
+                "sourceNumbers": [
+                  10,
+                  11,
+                  2026
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "N'a pas encore atteint 40 semaines : utiliser l'âge postmenstruel (l'âge corrigé n'existe qu'après le terme)",
+            "locale": "fr",
+            "template": "documented-authored-33e313346e1db67acc9a"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "28s 3d, nascido 15/01/2025, avaliação 15/01/2026: 365 − 81 = 284 dias = 9 meses e 9 dias",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Âge chronologique",
+                "locale": "fr",
+                "template": "documented-authored-d46d1b5a1839bd0b2854"
+              },
+              "value": {
+                "text": "1 an (365 jours)",
+                "locale": "fr",
+                "template": "documented-authored-c7f0c98297be7556bf3a",
+                "sourceNumbers": [
+                  1,
+                  365
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Âge postmenstruel",
+                "locale": "fr",
+                "template": "documented-authored-8fe4b8de9b6b0f8c4d37"
+              },
+              "value": {
+                "text": "80 a 4 j",
+                "locale": "fr",
+                "template": "documented-authored-4830d724d70548cc6a25",
+                "sourceNumbers": [
+                  80,
+                  4
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Prématurité à déduire",
+                "locale": "fr",
+                "template": "documented-authored-452bb8b1243d7b6e75d3"
+              },
+              "value": {
+                "text": "11 a 4 j (81 jours)",
+                "locale": "fr",
+                "template": "documented-authored-4e8a3ec8b2d83bc80565",
+                "sourceNumbers": [
+                  11,
+                  4,
+                  81
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Date à laquelle 40 semaines ont été complétées",
+                "locale": "fr",
+                "template": "documented-authored-9309eac55e94c36fc590"
+              },
+              "value": {
+                "text": "6/4/2025",
+                "locale": "fr",
+                "template": "documented-authored-fbb13695ffd0194e6eb8",
+                "sourceNumbers": [
+                  6,
+                  4,
+                  2025
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Utiliser l'âge corrigé sur les courbes de croissance et dans l'évaluation du développement",
+            "locale": "fr",
+            "template": "documented-authored-905c309791fac67ef129"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "30s 0d, nascido 01/03/2026, avaliação 25/09/2026: 208 dias de vida − 70 = 138 dias = 4 meses e 15 dias",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Chronologisches Alter",
+                "locale": "de",
+                "template": "documented-authored-d46d1b5a1839bd0b2854"
+              },
+              "value": {
+                "text": "6 Monate und 24 Tage (208 Tage)",
+                "locale": "de",
+                "template": "documented-authored-234d96facadd4b49add3",
+                "sourceNumbers": [
+                  6,
+                  24,
+                  208
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Postmenstruelles Alter",
+                "locale": "de",
+                "template": "documented-authored-8fe4b8de9b6b0f8c4d37"
+              },
+              "value": {
+                "text": "59 J 5 T",
+                "locale": "de",
+                "template": "documented-authored-4830d724d70548cc6a25",
+                "sourceNumbers": [
+                  59,
+                  5
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Abzuziehende Frühgeburtlichkeit",
+                "locale": "de",
+                "template": "documented-authored-452bb8b1243d7b6e75d3"
+              },
+              "value": {
+                "text": "10 J 0 T (70 Tage)",
+                "locale": "de",
+                "template": "documented-authored-4e8a3ec8b2d83bc80565",
+                "sourceNumbers": [
+                  10,
+                  0,
+                  70
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Datum, an dem 40 Wochen vollendet wurden",
+                "locale": "de",
+                "template": "documented-authored-9309eac55e94c36fc590"
+              },
+              "value": {
+                "text": "10/5/2026",
+                "locale": "de",
+                "template": "documented-authored-fbb13695ffd0194e6eb8",
+                "sourceNumbers": [
+                  10,
+                  5,
+                  2026
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Verwenden Sie das korrigierte Alter in den Wachstumskurven und bei der Entwicklungsbeurteilung",
+            "locale": "de",
+            "template": "documented-authored-905c309791fac67ef129"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "30s 0d, nascido 01/09/2026, avaliação 25/09/2026: 24 dias de vida, IPM 234 dias = 33s 3d",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Chronologisches Alter",
+                "locale": "de",
+                "template": "documented-authored-d46d1b5a1839bd0b2854"
+              },
+              "value": {
+                "text": "24 Tage (24 Tage)",
+                "locale": "de",
+                "template": "documented-authored-cc12b4b474aad7e09c51",
+                "sourceNumbers": [
+                  24,
+                  24
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Postmenstruelles Alter",
+                "locale": "de",
+                "template": "documented-authored-8fe4b8de9b6b0f8c4d37"
+              },
+              "value": {
+                "text": "33 J 3 T",
+                "locale": "de",
+                "template": "documented-authored-4830d724d70548cc6a25",
+                "sourceNumbers": [
+                  33,
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Abzuziehende Frühgeburtlichkeit",
+                "locale": "de",
+                "template": "documented-authored-452bb8b1243d7b6e75d3"
+              },
+              "value": {
+                "text": "10 J 0 T (70 Tage)",
+                "locale": "de",
+                "template": "documented-authored-4e8a3ec8b2d83bc80565",
+                "sourceNumbers": [
+                  10,
+                  0,
+                  70
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Datum, an dem 40 Wochen vollendet wurden",
+                "locale": "de",
+                "template": "documented-authored-9309eac55e94c36fc590"
+              },
+              "value": {
+                "text": "10/11/2026",
+                "locale": "de",
+                "template": "documented-authored-fbb13695ffd0194e6eb8",
+                "sourceNumbers": [
+                  10,
+                  11,
+                  2026
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "40 Wochen noch nicht vollendet: postmenstruelles Alter verwenden (das korrigierte Alter existiert erst nach dem Termin)",
+            "locale": "de",
+            "template": "documented-authored-33e313346e1db67acc9a"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "28s 3d, nascido 15/01/2025, avaliação 15/01/2026: 365 − 81 = 284 dias = 9 meses e 9 dias",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Chronologisches Alter",
+                "locale": "de",
+                "template": "documented-authored-d46d1b5a1839bd0b2854"
+              },
+              "value": {
+                "text": "1 Jahr (365 Tage)",
+                "locale": "de",
+                "template": "documented-authored-c7f0c98297be7556bf3a",
+                "sourceNumbers": [
+                  1,
+                  365
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Postmenstruelles Alter",
+                "locale": "de",
+                "template": "documented-authored-8fe4b8de9b6b0f8c4d37"
+              },
+              "value": {
+                "text": "80 J 4 T",
+                "locale": "de",
+                "template": "documented-authored-4830d724d70548cc6a25",
+                "sourceNumbers": [
+                  80,
+                  4
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Abzuziehende Frühgeburtlichkeit",
+                "locale": "de",
+                "template": "documented-authored-452bb8b1243d7b6e75d3"
+              },
+              "value": {
+                "text": "11 J 4 T (81 Tage)",
+                "locale": "de",
+                "template": "documented-authored-4e8a3ec8b2d83bc80565",
+                "sourceNumbers": [
+                  11,
+                  4,
+                  81
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Datum, an dem 40 Wochen vollendet wurden",
+                "locale": "de",
+                "template": "documented-authored-9309eac55e94c36fc590"
+              },
+              "value": {
+                "text": "6/4/2025",
+                "locale": "de",
+                "template": "documented-authored-fbb13695ffd0194e6eb8",
+                "sourceNumbers": [
+                  6,
+                  4,
+                  2025
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Verwenden Sie das korrigierte Alter in den Wachstumskurven und bei der Entwicklungsbeurteilung",
+            "locale": "de",
+            "template": "documented-authored-905c309791fac67ef129"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "30s 0d, nascido 01/03/2026, avaliação 25/09/2026: 208 dias de vida − 70 = 138 dias = 4 meses e 15 dias",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Età cronologica",
+                "locale": "it",
+                "template": "documented-authored-d46d1b5a1839bd0b2854"
+              },
+              "value": {
+                "text": "6 mesi e 24 giorni (208 giorni)",
+                "locale": "it",
+                "template": "documented-authored-234d96facadd4b49add3",
+                "sourceNumbers": [
+                  6,
+                  24,
+                  208
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Età postmestruale",
+                "locale": "it",
+                "template": "documented-authored-8fe4b8de9b6b0f8c4d37"
+              },
+              "value": {
+                "text": "59a 5g",
+                "locale": "it",
+                "template": "documented-authored-4830d724d70548cc6a25",
+                "sourceNumbers": [
+                  59,
+                  5
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Prematurità da detrarre",
+                "locale": "it",
+                "template": "documented-authored-452bb8b1243d7b6e75d3"
+              },
+              "value": {
+                "text": "10a 0g (70 giorni)",
+                "locale": "it",
+                "template": "documented-authored-4e8a3ec8b2d83bc80565",
+                "sourceNumbers": [
+                  10,
+                  0,
+                  70
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Data in cui ha completato 40 settimane",
+                "locale": "it",
+                "template": "documented-authored-9309eac55e94c36fc590"
+              },
+              "value": {
+                "text": "10/5/2026",
+                "locale": "it",
+                "template": "documented-authored-fbb13695ffd0194e6eb8",
+                "sourceNumbers": [
+                  10,
+                  5,
+                  2026
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Usare l'età corretta nelle curve di crescita e nella valutazione dello sviluppo",
+            "locale": "it",
+            "template": "documented-authored-905c309791fac67ef129"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "30s 0d, nascido 01/09/2026, avaliação 25/09/2026: 24 dias de vida, IPM 234 dias = 33s 3d",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Età cronologica",
+                "locale": "it",
+                "template": "documented-authored-d46d1b5a1839bd0b2854"
+              },
+              "value": {
+                "text": "24 giorni (24 giorni)",
+                "locale": "it",
+                "template": "documented-authored-cc12b4b474aad7e09c51",
+                "sourceNumbers": [
+                  24,
+                  24
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Età postmestruale",
+                "locale": "it",
+                "template": "documented-authored-8fe4b8de9b6b0f8c4d37"
+              },
+              "value": {
+                "text": "33a 3g",
+                "locale": "it",
+                "template": "documented-authored-4830d724d70548cc6a25",
+                "sourceNumbers": [
+                  33,
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Prematurità da detrarre",
+                "locale": "it",
+                "template": "documented-authored-452bb8b1243d7b6e75d3"
+              },
+              "value": {
+                "text": "10a 0g (70 giorni)",
+                "locale": "it",
+                "template": "documented-authored-4e8a3ec8b2d83bc80565",
+                "sourceNumbers": [
+                  10,
+                  0,
+                  70
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Data in cui ha completato 40 settimane",
+                "locale": "it",
+                "template": "documented-authored-9309eac55e94c36fc590"
+              },
+              "value": {
+                "text": "10/11/2026",
+                "locale": "it",
+                "template": "documented-authored-fbb13695ffd0194e6eb8",
+                "sourceNumbers": [
+                  10,
+                  11,
+                  2026
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Non ha ancora completato 40 settimane: usare l'età postmestruale (l'età corretta esiste solo dopo il termine)",
+            "locale": "it",
+            "template": "documented-authored-33e313346e1db67acc9a"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "28s 3d, nascido 15/01/2025, avaliação 15/01/2026: 365 − 81 = 284 dias = 9 meses e 9 dias",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Età cronologica",
+                "locale": "it",
+                "template": "documented-authored-d46d1b5a1839bd0b2854"
+              },
+              "value": {
+                "text": "1 anno (365 giorni)",
+                "locale": "it",
+                "template": "documented-authored-c7f0c98297be7556bf3a",
+                "sourceNumbers": [
+                  1,
+                  365
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Età postmestruale",
+                "locale": "it",
+                "template": "documented-authored-8fe4b8de9b6b0f8c4d37"
+              },
+              "value": {
+                "text": "80a 4g",
+                "locale": "it",
+                "template": "documented-authored-4830d724d70548cc6a25",
+                "sourceNumbers": [
+                  80,
+                  4
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Prematurità da detrarre",
+                "locale": "it",
+                "template": "documented-authored-452bb8b1243d7b6e75d3"
+              },
+              "value": {
+                "text": "11a 4g (81 giorni)",
+                "locale": "it",
+                "template": "documented-authored-4e8a3ec8b2d83bc80565",
+                "sourceNumbers": [
+                  11,
+                  4,
+                  81
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Data in cui ha completato 40 settimane",
+                "locale": "it",
+                "template": "documented-authored-9309eac55e94c36fc590"
+              },
+              "value": {
+                "text": "6/4/2025",
+                "locale": "it",
+                "template": "documented-authored-fbb13695ffd0194e6eb8",
+                "sourceNumbers": [
+                  6,
+                  4,
+                  2025
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Usare l'età corretta nelle curve di crescita e nella valutazione dello sviluppo",
+            "locale": "it",
+            "template": "documented-authored-905c309791fac67ef129"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "30s 0d, nascido 01/03/2026, avaliação 25/09/2026: 208 dias de vida − 70 = 138 dias = 4 meses e 15 dias",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "العمر الزمني",
+                "locale": "ar",
+                "template": "documented-authored-d46d1b5a1839bd0b2854"
+              },
+              "value": {
+                "text": "٦ شهرًا و٢٤ يومًا (٢٠٨ يومًا)",
+                "locale": "ar",
+                "template": "documented-authored-234d96facadd4b49add3",
+                "sourceNumbers": [
+                  6,
+                  24,
+                  208
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "العمر بعد آخر دورة شهرية",
+                "locale": "ar",
+                "template": "documented-authored-8fe4b8de9b6b0f8c4d37"
+              },
+              "value": {
+                "text": "٥٩ سنة ٥ يوم",
+                "locale": "ar",
+                "template": "documented-authored-4830d724d70548cc6a25",
+                "sourceNumbers": [
+                  59,
+                  5
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "الخداج الواجب خصمه",
+                "locale": "ar",
+                "template": "documented-authored-452bb8b1243d7b6e75d3"
+              },
+              "value": {
+                "text": "١٠ سنة ٠ يوم (٧٠ يومًا)",
+                "locale": "ar",
+                "template": "documented-authored-4e8a3ec8b2d83bc80565",
+                "sourceNumbers": [
+                  10,
+                  0,
+                  70
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "التاريخ الذي أتم فيه 40 أسبوعًا",
+                "locale": "ar",
+                "template": "documented-authored-9309eac55e94c36fc590"
+              },
+              "value": {
+                "text": "١٠/٥/٢٠٢٦",
+                "locale": "ar",
+                "template": "documented-authored-fbb13695ffd0194e6eb8",
+                "sourceNumbers": [
+                  10,
+                  5,
+                  2026
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "استخدم العمر المُصحَّح في منحنيات النمو وفي تقييم النمو والتطور",
+            "locale": "ar",
+            "template": "documented-authored-905c309791fac67ef129"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "30s 0d, nascido 01/09/2026, avaliação 25/09/2026: 24 dias de vida, IPM 234 dias = 33s 3d",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "العمر الزمني",
+                "locale": "ar",
+                "template": "documented-authored-d46d1b5a1839bd0b2854"
+              },
+              "value": {
+                "text": "٢٤ يومًا (٢٤ يومًا)",
+                "locale": "ar",
+                "template": "documented-authored-cc12b4b474aad7e09c51",
+                "sourceNumbers": [
+                  24,
+                  24
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "العمر بعد آخر دورة شهرية",
+                "locale": "ar",
+                "template": "documented-authored-8fe4b8de9b6b0f8c4d37"
+              },
+              "value": {
+                "text": "٣٣ سنة ٣ يوم",
+                "locale": "ar",
+                "template": "documented-authored-4830d724d70548cc6a25",
+                "sourceNumbers": [
+                  33,
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "الخداج الواجب خصمه",
+                "locale": "ar",
+                "template": "documented-authored-452bb8b1243d7b6e75d3"
+              },
+              "value": {
+                "text": "١٠ سنة ٠ يوم (٧٠ يومًا)",
+                "locale": "ar",
+                "template": "documented-authored-4e8a3ec8b2d83bc80565",
+                "sourceNumbers": [
+                  10,
+                  0,
+                  70
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "التاريخ الذي أتم فيه 40 أسبوعًا",
+                "locale": "ar",
+                "template": "documented-authored-9309eac55e94c36fc590"
+              },
+              "value": {
+                "text": "١٠/١١/٢٠٢٦",
+                "locale": "ar",
+                "template": "documented-authored-fbb13695ffd0194e6eb8",
+                "sourceNumbers": [
+                  10,
+                  11,
+                  2026
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "لم يُكمل 40 أسبوعًا بعد: استخدم العمر بعد الحيض (العمر المُصحَّح لا يوجد إلا بعد تمام الحمل)",
+            "locale": "ar",
+            "template": "documented-authored-33e313346e1db67acc9a"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "28s 3d, nascido 15/01/2025, avaliação 15/01/2026: 365 − 81 = 284 dias = 9 meses e 9 dias",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "العمر الزمني",
+                "locale": "ar",
+                "template": "documented-authored-d46d1b5a1839bd0b2854"
+              },
+              "value": {
+                "text": "١ سنة (٣٦٥ يومًا)",
+                "locale": "ar",
+                "template": "documented-authored-c7f0c98297be7556bf3a",
+                "sourceNumbers": [
+                  1,
+                  365
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "العمر بعد آخر دورة شهرية",
+                "locale": "ar",
+                "template": "documented-authored-8fe4b8de9b6b0f8c4d37"
+              },
+              "value": {
+                "text": "٨٠ سنة ٤ يوم",
+                "locale": "ar",
+                "template": "documented-authored-4830d724d70548cc6a25",
+                "sourceNumbers": [
+                  80,
+                  4
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "الخداج الواجب خصمه",
+                "locale": "ar",
+                "template": "documented-authored-452bb8b1243d7b6e75d3"
+              },
+              "value": {
+                "text": "١١ سنة ٤ يوم (٨١ يومًا)",
+                "locale": "ar",
+                "template": "documented-authored-4e8a3ec8b2d83bc80565",
+                "sourceNumbers": [
+                  11,
+                  4,
+                  81
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "التاريخ الذي أتم فيه 40 أسبوعًا",
+                "locale": "ar",
+                "template": "documented-authored-9309eac55e94c36fc590"
+              },
+              "value": {
+                "text": "٦/٤/٢٠٢٥",
+                "locale": "ar",
+                "template": "documented-authored-fbb13695ffd0194e6eb8",
+                "sourceNumbers": [
+                  6,
+                  4,
+                  2025
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "استخدم العمر المُصحَّح في منحنيات النمو وفي تقييم النمو والتطور",
+            "locale": "ar",
+            "template": "documented-authored-905c309791fac67ef129"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "30s 0d, nascido 01/03/2026, avaliação 25/09/2026: 208 dias de vida − 70 = 138 dias = 4 meses e 15 dias",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "实际年龄",
+                "locale": "zh",
+                "template": "documented-authored-d46d1b5a1839bd0b2854"
+              },
+              "value": {
+                "text": "6 个月 24 天（208 天）",
+                "locale": "zh",
+                "template": "documented-authored-234d96facadd4b49add3",
+                "sourceNumbers": [
+                  6,
+                  24,
+                  208
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "经后年龄",
+                "locale": "zh",
+                "template": "documented-authored-8fe4b8de9b6b0f8c4d37"
+              },
+              "value": {
+                "text": "59岁 5天",
+                "locale": "zh",
+                "template": "documented-authored-4830d724d70548cc6a25",
+                "sourceNumbers": [
+                  59,
+                  5
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "需扣除的早产期",
+                "locale": "zh",
+                "template": "documented-authored-452bb8b1243d7b6e75d3"
+              },
+              "value": {
+                "text": "10岁 0天（70天）",
+                "locale": "zh",
+                "template": "documented-authored-4e8a3ec8b2d83bc80565",
+                "sourceNumbers": [
+                  10,
+                  0,
+                  70
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "满 40 周的日期",
+                "locale": "zh",
+                "template": "documented-authored-9309eac55e94c36fc590"
+              },
+              "value": {
+                "text": "10/5/2026",
+                "locale": "zh",
+                "template": "documented-authored-fbb13695ffd0194e6eb8",
+                "sourceNumbers": [
+                  10,
+                  5,
+                  2026
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "在生长曲线和发育评估中使用矫正年龄",
+            "locale": "zh",
+            "template": "documented-authored-905c309791fac67ef129"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "30s 0d, nascido 01/09/2026, avaliação 25/09/2026: 24 dias de vida, IPM 234 dias = 33s 3d",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "实际年龄",
+                "locale": "zh",
+                "template": "documented-authored-d46d1b5a1839bd0b2854"
+              },
+              "value": {
+                "text": "24天（24天）",
+                "locale": "zh",
+                "template": "documented-authored-cc12b4b474aad7e09c51",
+                "sourceNumbers": [
+                  24,
+                  24
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "经后年龄",
+                "locale": "zh",
+                "template": "documented-authored-8fe4b8de9b6b0f8c4d37"
+              },
+              "value": {
+                "text": "33岁 3天",
+                "locale": "zh",
+                "template": "documented-authored-4830d724d70548cc6a25",
+                "sourceNumbers": [
+                  33,
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "需扣除的早产期",
+                "locale": "zh",
+                "template": "documented-authored-452bb8b1243d7b6e75d3"
+              },
+              "value": {
+                "text": "10岁 0天（70天）",
+                "locale": "zh",
+                "template": "documented-authored-4e8a3ec8b2d83bc80565",
+                "sourceNumbers": [
+                  10,
+                  0,
+                  70
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "满 40 周的日期",
+                "locale": "zh",
+                "template": "documented-authored-9309eac55e94c36fc590"
+              },
+              "value": {
+                "text": "10/11/2026",
+                "locale": "zh",
+                "template": "documented-authored-fbb13695ffd0194e6eb8",
+                "sourceNumbers": [
+                  10,
+                  11,
+                  2026
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "尚未满 40 周：使用末次月经后年龄（矫正年龄仅在足月后才存在）",
+            "locale": "zh",
+            "template": "documented-authored-33e313346e1db67acc9a"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "28s 3d, nascido 15/01/2025, avaliação 15/01/2026: 365 − 81 = 284 dias = 9 meses e 9 dias",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "实际年龄",
+                "locale": "zh",
+                "template": "documented-authored-d46d1b5a1839bd0b2854"
+              },
+              "value": {
+                "text": "1岁（365天）",
+                "locale": "zh",
+                "template": "documented-authored-c7f0c98297be7556bf3a",
+                "sourceNumbers": [
+                  1,
+                  365
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "经后年龄",
+                "locale": "zh",
+                "template": "documented-authored-8fe4b8de9b6b0f8c4d37"
+              },
+              "value": {
+                "text": "80岁 4天",
+                "locale": "zh",
+                "template": "documented-authored-4830d724d70548cc6a25",
+                "sourceNumbers": [
+                  80,
+                  4
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "需扣除的早产期",
+                "locale": "zh",
+                "template": "documented-authored-452bb8b1243d7b6e75d3"
+              },
+              "value": {
+                "text": "11岁 4天（81天）",
+                "locale": "zh",
+                "template": "documented-authored-4e8a3ec8b2d83bc80565",
+                "sourceNumbers": [
+                  11,
+                  4,
+                  81
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "满 40 周的日期",
+                "locale": "zh",
+                "template": "documented-authored-9309eac55e94c36fc590"
+              },
+              "value": {
+                "text": "6/4/2025",
+                "locale": "zh",
+                "template": "documented-authored-fbb13695ffd0194e6eb8",
+                "sourceNumbers": [
+                  6,
+                  4,
+                  2025
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "在生长曲线和发育评估中使用矫正年龄",
+            "locale": "zh",
+            "template": "documented-authored-905c309791fac67ef129"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "30s 0d, nascido 01/03/2026, avaliação 25/09/2026: 208 dias de vida − 70 = 138 dias = 4 meses e 15 dias",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "暦年齢",
+                "locale": "ja",
+                "template": "documented-authored-d46d1b5a1839bd0b2854"
+              },
+              "value": {
+                "text": "6か月と24日（208日）",
+                "locale": "ja",
+                "template": "documented-authored-234d96facadd4b49add3",
+                "sourceNumbers": [
+                  6,
+                  24,
+                  208
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "月経後週数",
+                "locale": "ja",
+                "template": "documented-authored-8fe4b8de9b6b0f8c4d37"
+              },
+              "value": {
+                "text": "59歳5日",
+                "locale": "ja",
+                "template": "documented-authored-4830d724d70548cc6a25",
+                "sourceNumbers": [
+                  59,
+                  5
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "差し引くべき早産分",
+                "locale": "ja",
+                "template": "documented-authored-452bb8b1243d7b6e75d3"
+              },
+              "value": {
+                "text": "10歳0日（70日）",
+                "locale": "ja",
+                "template": "documented-authored-4e8a3ec8b2d83bc80565",
+                "sourceNumbers": [
+                  10,
+                  0,
+                  70
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "40週を完了した日付",
+                "locale": "ja",
+                "template": "documented-authored-9309eac55e94c36fc590"
+              },
+              "value": {
+                "text": "10/5/2026",
+                "locale": "ja",
+                "template": "documented-authored-fbb13695ffd0194e6eb8",
+                "sourceNumbers": [
+                  10,
+                  5,
+                  2026
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "成長曲線および発達評価では修正月齢を使用する",
+            "locale": "ja",
+            "template": "documented-authored-905c309791fac67ef129"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "30s 0d, nascido 01/09/2026, avaliação 25/09/2026: 24 dias de vida, IPM 234 dias = 33s 3d",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "暦年齢",
+                "locale": "ja",
+                "template": "documented-authored-d46d1b5a1839bd0b2854"
+              },
+              "value": {
+                "text": "24日（24日）",
+                "locale": "ja",
+                "template": "documented-authored-cc12b4b474aad7e09c51",
+                "sourceNumbers": [
+                  24,
+                  24
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "月経後週数",
+                "locale": "ja",
+                "template": "documented-authored-8fe4b8de9b6b0f8c4d37"
+              },
+              "value": {
+                "text": "33歳3日",
+                "locale": "ja",
+                "template": "documented-authored-4830d724d70548cc6a25",
+                "sourceNumbers": [
+                  33,
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "差し引くべき早産分",
+                "locale": "ja",
+                "template": "documented-authored-452bb8b1243d7b6e75d3"
+              },
+              "value": {
+                "text": "10歳0日（70日）",
+                "locale": "ja",
+                "template": "documented-authored-4e8a3ec8b2d83bc80565",
+                "sourceNumbers": [
+                  10,
+                  0,
+                  70
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "40週を完了した日付",
+                "locale": "ja",
+                "template": "documented-authored-9309eac55e94c36fc590"
+              },
+              "value": {
+                "text": "10/11/2026",
+                "locale": "ja",
+                "template": "documented-authored-fbb13695ffd0194e6eb8",
+                "sourceNumbers": [
+                  10,
+                  11,
+                  2026
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "まだ40週に達していない場合：月経後週数を使用する（修正年齢は正期産後にのみ存在する）",
+            "locale": "ja",
+            "template": "documented-authored-33e313346e1db67acc9a"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "28s 3d, nascido 15/01/2025, avaliação 15/01/2026: 365 − 81 = 284 dias = 9 meses e 9 dias",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "暦年齢",
+                "locale": "ja",
+                "template": "documented-authored-d46d1b5a1839bd0b2854"
+              },
+              "value": {
+                "text": "1年（365日）",
+                "locale": "ja",
+                "template": "documented-authored-c7f0c98297be7556bf3a",
+                "sourceNumbers": [
+                  1,
+                  365
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "月経後週数",
+                "locale": "ja",
+                "template": "documented-authored-8fe4b8de9b6b0f8c4d37"
+              },
+              "value": {
+                "text": "80歳4日",
+                "locale": "ja",
+                "template": "documented-authored-4830d724d70548cc6a25",
+                "sourceNumbers": [
+                  80,
+                  4
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "差し引くべき早産分",
+                "locale": "ja",
+                "template": "documented-authored-452bb8b1243d7b6e75d3"
+              },
+              "value": {
+                "text": "11歳4日（81日）",
+                "locale": "ja",
+                "template": "documented-authored-4e8a3ec8b2d83bc80565",
+                "sourceNumbers": [
+                  11,
+                  4,
+                  81
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "40週を完了した日付",
+                "locale": "ja",
+                "template": "documented-authored-9309eac55e94c36fc590"
+              },
+              "value": {
+                "text": "6/4/2025",
+                "locale": "ja",
+                "template": "documented-authored-fbb13695ffd0194e6eb8",
+                "sourceNumbers": [
+                  6,
+                  4,
+                  2025
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "成長曲線および発達評価では修正月齢を使用する",
+            "locale": "ja",
+            "template": "documented-authored-905c309791fac67ef129"
+          },
+          "level": "info"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "30s 0d, nascido 01/03/2026, avaliação 25/09/2026: 208 dias de vida − 70 = 138 dias = 4 meses e 15 dias",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "कालानुक्रमिक आयु",
+                "locale": "hi",
+                "template": "documented-authored-d46d1b5a1839bd0b2854"
+              },
+              "value": {
+                "text": "6 माह और 24 दिन (208 दिन)",
+                "locale": "hi",
+                "template": "documented-authored-234d96facadd4b49add3",
+                "sourceNumbers": [
+                  6,
+                  24,
+                  208
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "पोस्ट-मेंस्ट्रुअल आयु",
+                "locale": "hi",
+                "template": "documented-authored-8fe4b8de9b6b0f8c4d37"
+              },
+              "value": {
+                "text": "59वर्ष 5दिन",
+                "locale": "hi",
+                "template": "documented-authored-4830d724d70548cc6a25",
+                "sourceNumbers": [
+                  59,
+                  5
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "घटाई जाने वाली अपूर्णकालिकता",
+                "locale": "hi",
+                "template": "documented-authored-452bb8b1243d7b6e75d3"
+              },
+              "value": {
+                "text": "10वर्ष 0दिन (70 दिन)",
+                "locale": "hi",
+                "template": "documented-authored-4e8a3ec8b2d83bc80565",
+                "sourceNumbers": [
+                  10,
+                  0,
+                  70
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "जिस तिथि पर 40 सप्ताह पूरे हुए",
+                "locale": "hi",
+                "template": "documented-authored-9309eac55e94c36fc590"
+              },
+              "value": {
+                "text": "10/5/2026",
+                "locale": "hi",
+                "template": "documented-authored-fbb13695ffd0194e6eb8",
+                "sourceNumbers": [
+                  10,
+                  5,
+                  2026
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "वृद्धि वक्रों और विकासात्मक मूल्यांकन में संशोधित आयु का उपयोग करें",
+            "locale": "hi",
+            "template": "documented-authored-905c309791fac67ef129"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "30s 0d, nascido 01/09/2026, avaliação 25/09/2026: 24 dias de vida, IPM 234 dias = 33s 3d",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "कालानुक्रमिक आयु",
+                "locale": "hi",
+                "template": "documented-authored-d46d1b5a1839bd0b2854"
+              },
+              "value": {
+                "text": "24 दिन (24 दिन)",
+                "locale": "hi",
+                "template": "documented-authored-cc12b4b474aad7e09c51",
+                "sourceNumbers": [
+                  24,
+                  24
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "पोस्ट-मेंस्ट्रुअल आयु",
+                "locale": "hi",
+                "template": "documented-authored-8fe4b8de9b6b0f8c4d37"
+              },
+              "value": {
+                "text": "33वर्ष 3दिन",
+                "locale": "hi",
+                "template": "documented-authored-4830d724d70548cc6a25",
+                "sourceNumbers": [
+                  33,
+                  3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "घटाई जाने वाली अपूर्णकालिकता",
+                "locale": "hi",
+                "template": "documented-authored-452bb8b1243d7b6e75d3"
+              },
+              "value": {
+                "text": "10वर्ष 0दिन (70 दिन)",
+                "locale": "hi",
+                "template": "documented-authored-4e8a3ec8b2d83bc80565",
+                "sourceNumbers": [
+                  10,
+                  0,
+                  70
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "जिस तिथि पर 40 सप्ताह पूरे हुए",
+                "locale": "hi",
+                "template": "documented-authored-9309eac55e94c36fc590"
+              },
+              "value": {
+                "text": "10/11/2026",
+                "locale": "hi",
+                "template": "documented-authored-fbb13695ffd0194e6eb8",
+                "sourceNumbers": [
+                  10,
+                  11,
+                  2026
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "अभी 40 सप्ताह पूरे नहीं हुए हैं: पोस्टमेनस्ट्रुअल आयु का उपयोग करें (संशोधित आयु केवल अवधि के बाद ही होती है)",
+            "locale": "hi",
+            "template": "documented-authored-33e313346e1db67acc9a"
+          },
+          "level": "info"
+        }
+      },
+      {
+        "name": "28s 3d, nascido 15/01/2025, avaliação 15/01/2026: 365 − 81 = 284 dias = 9 meses e 9 dias",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "कालानुक्रमिक आयु",
+                "locale": "hi",
+                "template": "documented-authored-d46d1b5a1839bd0b2854"
+              },
+              "value": {
+                "text": "1 वर्ष (365 दिन)",
+                "locale": "hi",
+                "template": "documented-authored-c7f0c98297be7556bf3a",
+                "sourceNumbers": [
+                  1,
+                  365
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "पोस्ट-मेंस्ट्रुअल आयु",
+                "locale": "hi",
+                "template": "documented-authored-8fe4b8de9b6b0f8c4d37"
+              },
+              "value": {
+                "text": "80वर्ष 4दिन",
+                "locale": "hi",
+                "template": "documented-authored-4830d724d70548cc6a25",
+                "sourceNumbers": [
+                  80,
+                  4
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "घटाई जाने वाली अपूर्णकालिकता",
+                "locale": "hi",
+                "template": "documented-authored-452bb8b1243d7b6e75d3"
+              },
+              "value": {
+                "text": "11वर्ष 4दिन (81 दिन)",
+                "locale": "hi",
+                "template": "documented-authored-4e8a3ec8b2d83bc80565",
+                "sourceNumbers": [
+                  11,
+                  4,
+                  81
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "जिस तिथि पर 40 सप्ताह पूरे हुए",
+                "locale": "hi",
+                "template": "documented-authored-9309eac55e94c36fc590"
+              },
+              "value": {
+                "text": "6/4/2025",
+                "locale": "hi",
+                "template": "documented-authored-fbb13695ffd0194e6eb8",
+                "sourceNumbers": [
+                  6,
+                  4,
+                  2025
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "वृद्धि वक्रों और विकासात्मक मूल्यांकन में संशोधित आयु का उपयोग करें",
+            "locale": "hi",
+            "template": "documented-authored-905c309791fac67ef129"
+          },
+          "level": "info"
+        }
+      }
+    ]
+  }
+}

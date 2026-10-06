@@ -297,7 +297,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "AAPterminologiaperinatal 2004:idadecorrigida 40 semanas; idadepósmenstrual separada",
-    "implementationVersion": "idade-corrigida-do-prematuro@native-2026-10-03+03846ab1e0ab",
+    "implementationVersion": "idade-corrigida-do-prematuro@native-2026-10-05+8c3a32bfceff",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/15520122/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -501,7 +501,7 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "03846ab1e0ab39a6979285421c3963f369559e5ef9fe3bbd0f2a81bac4eb22e2",
+      "implementationHash": "8c3a32bfceff5f9902c7adbfdaf2e9a00ab1733004761704639790f595bea5d2",
       "sourceNumericsAmendment": {
         "recordedAt": "2026-10-04T16:03:00.229Z",
         "sourceComposition": {
@@ -531,7 +531,35 @@
         "fullMethodConformance": "not-performed",
         "originalSourceCasesPreserved": true,
         "originalTolerancesPreserved": true
-      }
+      },
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "idade-corrigida-do-prematuro@native-2026-10-03+03846ab1e0ab",
+          "previousImplementationHash": "03846ab1e0ab39a6979285421c3963f369559e5ef9fe3bbd0f2a81bac4eb22e2",
+          "implementationHash": "8c3a32bfceff5f9902c7adbfdaf2e9a00ab1733004761704639790f595bea5d2",
+          "scientificBodySha256": "4f30dfe6a0c6ec952854142c5562db8ffa50bbc9c82c722e038a067dd405d901",
+          "metadataContractHash": "5e9be66f9e1a03c9a49c083efdd167369f4afa05ccadc62a216f301d5c88bd97",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "A idade corrigida é a idade cronológica menos as semanas que faltavam para 40 semanas de gestação; idade pós-menstrual e idade cronológica são conceitos distintos. No acompanhamento de prematuros, o Ministério da Saúde usa idade cronológica para vacinação e idade corrigida para crescimento e desenvolvimento. A página consultada traz horizontes conforme o desfecho: 18 meses para perímetro cefálico, 24 meses para peso e 42 meses para avaliação neurológica; também descreve a regra geral até 2 anos, ou até 3 anos cronológicos quando o nascimento ocorreu antes de 28 semanas. Escolha a idade e o horizonte segundo o acompanhamento, sem interpretar o cálculo como diagnóstico de atraso. A política da AAP de 2004 trata de terminologia e descreve o termo idade corrigida para crianças prematuras até 3 anos. A página HealthyChildren da AAP, atualizada em 2018, descreve seu uso nos primeiros 2 anos para marcos do desenvolvimento. Os documentos têm finalidades distintas; os trechos conferidos não estabelecem uma única data de cessação para todo acompanhamento. Os horizontes do Ministério da Saúde dependem do desfecho, conforme os limites desta ferramenta.",
     "limitsEvidence": {
@@ -588,20 +616,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/idade-corrigida-do-prematuro/calculator.js",
-    "bytes": 7582,
-    "sha256": "03846ab1e0ab39a6979285421c3963f369559e5ef9fe3bbd0f2a81bac4eb22e2"
+    "bytes": 7787,
+    "sha256": "8c3a32bfceff5f9902c7adbfdaf2e9a00ab1733004761704639790f595bea5d2"
   },
-  "sourceToolSha256": "300cdc98b4f99feb0a66ebffa3dfa563758a8f16b475409ed9f864addbf96049",
+  "sourceToolSha256": "522d753e8f8148bfa51199d59ca747d140c8689954761af3aa89458a072afa8d",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "5c143063b2c632d270a16119bbeef425e92efe0f63e5d47823c6ec3362a3e0cc",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "5c143063b2c632d270a16119bbeef425e92efe0f63e5d47823c6ec3362a3e0cc",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

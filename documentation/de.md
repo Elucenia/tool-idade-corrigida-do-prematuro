@@ -105,3 +105,43 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Verwenden Sie das korrigierte Alter in den Wachstumskurven und bei der Entwicklungsbeurteilung
+
+| Ergebnisdetails | |
+| --- | --- |
+| Chronologisches Alter | 6 Monate und 24 Tage (208 Tage) |
+| Postmenstruelles Alter | 59 J 5 T |
+| Abzuziehende Frühgeburtlichkeit | 10 J 0 T (70 Tage) |
+| Datum, an dem 40 Wochen vollendet wurden | 10/5/2026 |
+
+
+### 2
+
+40 Wochen noch nicht vollendet: postmenstruelles Alter verwenden (das korrigierte Alter existiert erst nach dem Termin)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Chronologisches Alter | 24 Tage (24 Tage) |
+| Postmenstruelles Alter | 33 J 3 T |
+| Abzuziehende Frühgeburtlichkeit | 10 J 0 T (70 Tage) |
+| Datum, an dem 40 Wochen vollendet wurden | 10/11/2026 |
+
+
+### 3
+
+Verwenden Sie das korrigierte Alter in den Wachstumskurven und bei der Entwicklungsbeurteilung
+
+| Ergebnisdetails | |
+| --- | --- |
+| Chronologisches Alter | 1 Jahr (365 Tage) |
+| Postmenstruelles Alter | 80 J 4 T |
+| Abzuziehende Frühgeburtlichkeit | 11 J 4 T (81 Tage) |
+| Datum, an dem 40 Wochen vollendet wurden | 6/4/2025 |
+
